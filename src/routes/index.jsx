@@ -16,7 +16,7 @@ export const Paths = () =>{
             <BrowserRouter>
                 <Routes>
                     <Route path={'/'} element={<PageLayout/> }>
-                        <Route index element={<Home />}/>
+                        <Route path={'/Home'} element={<Home />}/>
                         <Route path={'/Guapoverso'} element={<Guapoverso />}/>
                         <Route path={'/Categoria'}element={<Categoria />}/>
                         <Route path={'/Sobre'}element={<Sobre />}/>
