@@ -2,7 +2,7 @@
   "name": "guapoduoacervo",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://LiviaAAF.github.io/acervo",
+  "homepage": "https://liviaaaf.github.io/acervo/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
