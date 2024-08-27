@@ -51,7 +51,7 @@ const Guapoverso = () =>{
 
                 <div className="box">
                   <img src="image/placeholder pfp.png" alt="Teste" />
-                  <h1><a href="image/placeholder pfp.webp">Mafiaduo</a></h1>
+                  <h1><a href="#">Mafiaduo</a></h1>
                   <div>Balanar e Roger</div>
                 </div>
 
