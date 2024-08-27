@@ -16,12 +16,12 @@ export const Paths = () =>{
             <BrowserRouter>
                 <Routes>
                     <Route path={'/'} element={<PageLayout/> }>
-                        <Route index element={<Home />}/>
-                        <Route path={'/Guapoverso'} element={<Guapoverso />}/>
-                        <Route path={'/Categoria'}element={<Categoria />}/>
-                        <Route path={'/Sobre'}element={<Sobre />}/>
+                        <Route path={'acervo/Home'} element={<Home />}/>
+                        <Route path={'acervo/Guapoverso'} element={<Guapoverso />}/>
+                        <Route path={'acervo/Categoria'}element={<Categoria />}/>
+                        <Route path={'acervo/Sobre'}element={<Sobre />}/>
                         {
-                            isLogged && <Route path={'/Dashboard'}element={<Dashboard />}/>
+                            isLogged && <Route path={'acervo/Dashboard'}element={<Dashboard />}/>
                         }
                     </Route>
                     <Route path={'*'} element={<NotFound />}/>
