@@ -7,7 +7,7 @@ const Header = () =>{
         <header className="header">
             <h1>
                 <a href="">
-                    <img alt="Arcevo Guapoduo" className="logo" src="image/Amaranthitem.webp" width="40" height="40"/>
+                    <img alt="Arcevo Guapoduo" className="logo" src="./image/Amaranthitem.webp" width="40" height="40"/>
                     <span><a href="index.html">Acervo Guapoduo</a></span>
                 </a>
             </h1>

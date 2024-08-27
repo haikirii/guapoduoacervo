@@ -13,15 +13,15 @@ export const Paths = () =>{
     const { isLogged } = useContext(AuthContext);
     return(
         <>
-            <BrowserRouter>
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <Routes>
                     <Route path={'/'} element={<PageLayout/> }>
-                        <Route path={'/Home'} element={<Home />}/>
+                        <Route index element={<Home />}/>
                         <Route path={'/Guapoverso'} element={<Guapoverso />}/>
                         <Route path={'/Categoria'}element={<Categoria />}/>
                         <Route path={'/Sobre'}element={<Sobre />}/>
                         {
-                            isLogged && <Route path={'/Dashboard'}element={<Dashboard />}/>
+                            isLogged && <Route path={'./Dashboard'}element={<Dashboard />}/>
                         }
                     </Route>
                     <Route path={'*'} element={<NotFound />}/>
