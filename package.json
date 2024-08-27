@@ -2,7 +2,7 @@
   "name": "guapoduoacervo",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://liviaaaf.github.io/acervo/",
+  "homepage": "https://haikirii.github.io/guapoduoacervo/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
