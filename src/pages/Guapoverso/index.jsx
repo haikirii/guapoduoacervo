@@ -26,7 +26,7 @@ const Guapoverso = () =>{
                 </div>
           
                 <div className="box">
-                  <img src="image/guapoduo/Obsessedduo Chibi.png" alt="Obsessedduo" />
+                  <img src="image/guapoduo/Obsessedduo-chibi.png" alt="Obsessedduo" />
                   <h1><a href="#">Obsesseduo</a></h1>
                   <div>Obcecados um pelo outro, mas eles gostam!</div>
                 </div>
@@ -44,7 +44,7 @@ const Guapoverso = () =>{
                 </div>
           
                 <div className="box">
-                  <img src="image/guapoduo/Queridinhosduo.png" alt="Teste" />
+                  <img src="image/guapoduo/Queridinhosduo-chibi.png" alt="Teste" />
                   <h1><a href="#">Queridinhosduo</a></h1>
                   <div>Eles são queridinhos mesmo, mas somente um do outro.</div>
                 </div>

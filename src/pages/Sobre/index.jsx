@@ -16,14 +16,14 @@ const Sobre = () =>{
             <section className="profile" id="profile">
                 <div className="box-container">
                     <div className="box">
-                    <img src="image/about/Nan pfp.jpg" alt="Desenho estilizado de uma moça branca de cabelos castanhos com vermelho olhando para o lado e usando uma blusa branca com manchas pretas. O fundo está desfocado." />
+                    <img src="image/about/Nan-pfp.jpg" alt="Desenho estilizado de uma moça branca de cabelos castanhos com vermelho olhando para o lado e usando uma blusa branca com manchas pretas. O fundo está desfocado." />
                         <h1>Nan Yelo</h1>
                         <h4>Diretora chefe</h4>
                         <div>Escritora de &quot;The Reason&quot; e apaixonada pelo amor do casal &quot;Guapoduo&quot;, sou obcecada por histórias e ter mil projetos ao mesmo tempo, então nada mais justo que providenciar um cantinho aconchegante para nossa comunidade se alojar e se sentir confortável.</div>
                     </div>
 
                     <div className="box">
-                    <img src="image/about/kiri pfp.jpg" alt="Desenho estilizado de homem branco de perfil com barba rala, cabelos castanhos longos e dando um sorriso. O fundo é branco e ao canto esquerdo superior é possível ver um nariz. O personagem é Kaiser Cohem de Ordem Paranormal" />
+                    <img src="image/about/Haikirii-pfp.jpg" alt="Desenho estilizado de homem branco de perfil com barba rala, cabelos castanhos longos e dando um sorriso. O fundo é branco e ao canto esquerdo superior é possível ver um nariz. O personagem é Kaiser Cohem de Ordem Paranormal" />
                         <h1>Kiri</h1>
                         <h4>Programador chefe</h4>
                         <div>Escritor desde 2016 e apaixonado por &quot;Guapoduo&quot; desde o primeiro momento. Eu amo me envolver em projetos para fandoms e sinto muito prazer em ver pessoas tão igualmente apaixonadas envolvidas neles, fandoms são lugares que pessoas podem se sentir confortáveis com o que gostam tanto e nada mais justo do que terem um lugar exclusivo para isso.</div>
@@ -37,7 +37,7 @@ const Sobre = () =>{
                     </div>
                 
                     <div className="box">
-                    <img src="image/about/Faburao pfp.jpg" alt="Desenho estilizado em mangá de uma menina com cabelos loiros, pele clara e olhos vermelhos. Usa um vestido babado branco com detalhes azuis e está envolta de morangos. É da obra Hanako-kum." />
+                    <img src="image/about/Faburao-pfp.jpg" alt="Desenho estilizado em mangá de uma menina com cabelos loiros, pele clara e olhos vermelhos. Usa um vestido babado branco com detalhes azuis e está envolta de morangos. É da obra Hanako-kum." />
                         <h1>Faburao</h1>
                         <h4>Moderadora</h4>
                         <div>Escritora, leitora e amante de história.</div>
@@ -51,7 +51,7 @@ const Sobre = () =>{
                     </div>
                 
                     <div className="box">
-                    <img src="image/about/Liazinea pfp.jpg" alt="Homem branco com cabelos bagunçados pretos e longos e expressão amarrada usando um suéter com padrão de cor verde e uma blusa preta por baixo. César Cohen da obra Ordem Paranormal."/>
+                    <img src="image/about/Liazinea-pfp.jpg" alt="Homem branco com cabelos bagunçados pretos e longos e expressão amarrada usando um suéter com padrão de cor verde e uma blusa preta por baixo. César Cohen da obra Ordem Paranormal."/>
                         <h1>Liazinea</h1>
                         <h4>Programadora</h4>
                         <div>&quot;Guapoduo&quot; e &quot;Ordem Paranormal&quot; são minha vida</div>
