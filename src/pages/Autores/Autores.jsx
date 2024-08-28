@@ -6,7 +6,7 @@ const Autores = () =>{ //const> não conseguir mexer no codigo > pesquisar depoi
         <Helmet>
             <title>Autores</title>
         </Helmet>
-        <section class="home">
+        <section className="home">
             <h2>Autores</h2>
             <p>BLA</p>
             <p>BLA BLA BLA</p>

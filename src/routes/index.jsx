@@ -6,6 +6,7 @@ import Categoria from "../pages/Categoria";
 import NotFound from "../pages/NotFound";
 import Sobre from "../pages/Sobre";
 import Dashboard from "../pages/Dashboard";
+import Autores from "../pages/Autores/Autores";
 import { useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 
