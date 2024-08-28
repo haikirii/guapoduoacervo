@@ -44,9 +44,9 @@ const Guapoverso = () =>{
                 </div>
           
                 <div className="box">
-                  <img src="image/Queridinhosduo .png" alt="Teste" />
+                  <img src="image/Queridinhosduo Chibi .png" alt="Teste" />
                   <h1><a href="#">Queridinhosduo</a></h1>
-                  <div>f!Cell e !Roier</div>
+                  <div>Eles são queridinhos mesmo, mas somente um do outro.</div>
                 </div>
 
                 <div className="box">
