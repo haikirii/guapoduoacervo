@@ -370,7 +370,6 @@ footer{
 }
 .footer-col ul li a:hover{
     color: var(--borderr);
-    padding-left: 10px;
     cursor: pointer;
 }
 
