@@ -7,7 +7,7 @@ const Home = () =>{
         <Helmet>
             <title>Home</title>
         </Helmet>
-        <section class="home">
+        <section className="home">
             <h2>Home</h2>
             <p>Imagem aqui</p>
             <p>BLA BLA BLA</p>

@@ -6,7 +6,7 @@ const Dashboard = () =>{
         <Helmet>
             <title>Dashboard</title>
         </Helmet>
-        <section class="home">
+        <section className="home">
             <h2>DASHBOARD</h2>
             <p>BLA</p>
             <p>BLA BLA BLA</p>

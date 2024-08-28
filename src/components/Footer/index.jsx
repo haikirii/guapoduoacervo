@@ -11,8 +11,8 @@ const Footer = () =>{
                         <div className="footer-col">
                             <h4>Amarantos & Acervos</h4>
                                 <ul>
-                                <p><span className="gatinho">"Olá, guapito!"</span></p>
-                                <p><span className="guapito">"Hola, ¡gatinho!"</span></p>
+                                <p><span className="gatinho">&quot;Olá, guapito!&quot;</span></p>
+                                <p><span className="guapito">&quot;Hola, ¡gatinho!&quot;</span></p>
                                 </ul>
                         </div>
                             

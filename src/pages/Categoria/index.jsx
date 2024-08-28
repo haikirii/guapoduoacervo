@@ -6,7 +6,7 @@ const Categoria = () =>{
         <Helmet>
             <title>Categorias</title>
         </Helmet>
-        <section class="home">
+        <section className="home">
             <h2>Categorias</h2>
             <p>BLA</p>
             <p>BLA BLA BLA</p>
