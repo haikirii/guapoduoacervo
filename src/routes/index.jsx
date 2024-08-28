@@ -20,6 +20,7 @@ export const Paths = () =>{
                         <Route path={'/Guapoverso'} element={<Guapoverso />}/>
                         <Route path={'/Categoria'}element={<Categoria />}/>
                         <Route path={'/Sobre'}element={<Sobre />}/>
+                        <Route path={'/Autores'}element={<Autores />}/>
                         {
                             isLogged && <Route path={'./Dashboard'}element={<Dashboard />}/>
                         }
