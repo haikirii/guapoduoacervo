@@ -44,7 +44,7 @@ const Guapoverso = () =>{
                 </div>
           
                 <div className="box">
-                  <img src="image/placeholder pfp.webp" alt="Teste" />
+                  <img src="image/Queridinhosduo .png" alt="Teste" />
                   <h1><a href="#">Queridinhosduo</a></h1>
                   <div>f!Cell e !Roier</div>
                 </div>
