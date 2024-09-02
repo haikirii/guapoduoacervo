@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --bg: #f8e3e0;
     --black: #13131a;
@@ -5,6 +8,11 @@
     --border-color:#B2C375;
     --white: #fff;
     --bar: #f0f8ff; /*aliceblue*/
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
 }
 
 *{
@@ -302,71 +310,6 @@ a:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-footer{
-    margin-top: auto;
-    background: var(--bar);
-    border-top: 5px solid;
-    color: var(--bg);
-    float: left;
-    font-size: .75em;
-    position: relative;
-    padding: 0;
-    width: 100%;
-}
-
-.container-footer{
-    max-width: 1300px;
-    padding: 20px 04%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.row-footer{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-col h4{
-    font-size: 14px;
-    color: var(--black);
-    margin-bottom: 15px;
-    font-weight: 500;
-    position: relative;
-}
-
-.footer-col p {
-    font-size: 13px;
-    text-transform: capitalize;
-    color: var(--black);
-    font-weight: 300;
-    display: block;
-}
-
-.footer-col ul{
-    list-style: none;
-}
-.footer-col ul li{
-    margin: 10px 0;
-}
-.footer-col ul li a{
-    font-size: 13px;
-    text-transform: capitalize;
-    color: var(--black);
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-    color: var(--border-color);
-    cursor: pointer;
 }
 
 @media (max-width: 800px) {

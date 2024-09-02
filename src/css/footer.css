@@ -1,0 +1,83 @@
+@import url("index.css");
+
+footer {
+    background-color: var(--bar);
+    padding-block: 40px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer * {
+    /* border: 1px solid red; */
+}
+
+.logo-footer-img img {
+    width: 122px;
+}
+
+.logo-footer-text {
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+    justify-content: space-between;
+}
+
+.logo-footer-text span {
+    font-family: "Rhodium Libre", serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo-footer-text span:nth-child(1) {
+    font-size: 30px;
+}
+
+.logo-footer-text span:nth-child(2) {
+    font-size: 40px;
+}
+
+.footer-text {
+    width: 100%;
+    margin-left: 75px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-section {
+    padding-left: 75px;
+}
+
+.footer-section h4 {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.footer-list a:hover {
+    text-decoration: underline;
+}
+
+.footer-list .svg-contatos svg{
+    margin-right: 10px;
+    width: 18px;
+}
+
+.footer-list a, .svg-contatos svg {
+    margin-block: 6px;
+}
