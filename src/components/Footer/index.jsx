@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../../css/footer.css';
+import './index.css';
 import logo from "/image/components/Logo.png";
 //svgs fontsawesome
 
