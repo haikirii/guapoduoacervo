@@ -2,9 +2,9 @@
     --bg: #f8e3e0;
     --black: #13131a;
     --border: 0.1rem solid #B2C375;
-    --borderr:#B2C375;
+    --border-color:#B2C375;
     --white: #fff;
-    --bar: aliceblue;
+    --bar: #f0f8ff; /*aliceblue*/
 }
 
 *{
@@ -16,8 +16,6 @@
     border: none;
     text-decoration: none;
     text-transform: none;
-    transition: 0.3s linear;
-
 }
 
 html {
@@ -25,14 +23,12 @@ html {
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
-  
 
 body {
     min-height: 100vh;
     display:flex;
     flex-direction: column;
-    background-color: #f8e3e0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: var(--bg);
 }
 
 .heading {
@@ -62,7 +58,7 @@ body {
 }
 
 .button:hover {
-    background: #B2C375;
+    background: var(--border-color);
     color: white;
     transition: 0.4;
     letter-spacing: 0.2rem;
@@ -92,7 +88,7 @@ body {
 }
 
 .header .navbar{
-    background-color: aliceblue;
+    background-color: var(--bar);
 }
 
 .navbar ul{
@@ -105,20 +101,20 @@ body {
 }
 
 .header .navbar a:hover{
-    color: var(--borderr);
-    border-bottom: 0.1rem solid var(--borderr);
+    color: var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
     padding-bottom: 0.5rem;
 }
 
 .header .icons div {
-    color: aliceblue;
+    color: var(--bar);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
 
 .header .icons div:hover {
-    color: var(--borderr);
+    color: var(--border-color);
 }
 
 #menu-button{
@@ -129,7 +125,7 @@ body {
     position: absolute;
     top: 115%;
     right: 7%;
-    background-color: var(--borderr);
+    background-color: var(--border-color);
     width: 50rem;
     height: 5rem;
     display: flex;
@@ -142,7 +138,7 @@ body {
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--borderr);
+    color: var(--border-color);
     padding: 1rem;
     text-transform: none;
 }
@@ -155,7 +151,7 @@ body {
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color: var(--borderr);
+    color: var(--border-color);
 }
   
 .header .search-form label:hover {
@@ -245,7 +241,7 @@ body {
 }
 
 .guapoverse  .box-container a:hover{
-    background-color: var(--borderr);
+    background-color: var(--border-color);
 }
 
 a {
@@ -295,8 +291,8 @@ a:hover{
 }
   
 .dropdown:hover .dropdown-button {
-    color: var(--borderr);
-    border-bottom: 0.1rem solid var(--borderr);
+    color: var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
     padding-bottom: 0.5rem;
 }
 
@@ -369,7 +365,7 @@ footer{
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: var(--borderr);
+    color: var(--border-color);
     cursor: pointer;
 }
 
