@@ -14,10 +14,6 @@ footer {
     justify-content: flex-end;
 }
 
-footer * {
-    /* border: 1px solid red; */
-}
-
 .logo-footer-img img {
     width: 122px;
 }
