@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './index.css';
+import './index.scss';
 import logo from "/image/components/Logo.png";
 //svgs fontsawesome
 
