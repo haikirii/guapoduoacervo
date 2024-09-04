@@ -8,10 +8,10 @@ import Sobre from "../pages/Sobre";
 import Dashboard from "../pages/Dashboard";
 import Autores from "../pages/Autores/Autores";
 import { useContext } from "react";
-import { AuthContext } from "../contexts/AuthContext";
+import { useAuthContext } from "../contexts/AuthContext";
 
 export const Paths = () =>{
-    const { isLogged } = useContext(AuthContext);
+    const { isLogged } = useAuthContext();
     return(
         <>
             <BrowserRouter basename={import.meta.env.BASE_URL}>
