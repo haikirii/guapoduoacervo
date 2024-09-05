@@ -8,10 +8,8 @@ import Sobre from "../pages/Sobre";
 import Dashboard from "../pages/Dashboard";
 import Autores from "../pages/Autores/Autores";
 import { useContext } from "react";
-import { useAuthContext } from "../contexts/AuthContext";
 
 export const Paths = () =>{
-    const { isLogged } = useAuthContext();
     return(
         <>
             <BrowserRouter basename={import.meta.env.BASE_URL}>
@@ -22,9 +20,6 @@ export const Paths = () =>{
                         <Route path={'/Categoria'}element={<Categoria />}/>
                         <Route path={'/Sobre'}element={<Sobre />}/>
                         <Route path={'/Autores'}element={<Autores />}/>
-                        {
-                            isLogged && <Route path={'./Dashboard'}element={<Dashboard />}/>
-                        }
                     </Route>
                     <Route path={'*'} element={<NotFound />}/>
                 </Routes>
