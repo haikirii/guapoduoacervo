@@ -1,42 +1,52 @@
 import { Link } from "react-router-dom";
-import '../../css/index.scss';
+import './index.scss';
+import logo from "/image/components/Logo.png";
+import acessar from "/image/components/Acessar.png";
 
 const Header = () =>{
     return(
         <>
-        <header className="header">
-            <h1>
-                <a href="">
-                    <img alt="Arcevo Guapoduo" className="logo" src="image/favicon/Amaranthitem.webp" width="40" height="40"/>
-                    <span><a href="index.html">Acervo Guapoduo</a></span>
-                </a>
-            </h1>
-            
-            <nav className="navbar">
-                <ul>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/Guapoverso'>Guapoverso</Link>
-                    </li>
-                    <li>
-                        <Link to='/Categoria'>Categorias</Link>
-                    </li>
-                    <li className="dropdown">
-                        <button className="dropdown-button">Acessar</button>
-        
-                        <div className="dropdown-content">
-                            <Link to='/Fanfics'>Fanfics</Link>
-                            <Link to='/Autores'>Autores</Link>
-                            <Link to='/Genero'>Gênero</Link>
+        <header>  
+            <div className="header-content wrapper">
+                <div className="logo-header">
+                    <div className="logo-header-img">
+                        <img src={logo} alt="Logo do Acervo Amaranto" />
+                    </div>
+                    <div className="logo-header-text">
+                        <Link to='/'>Acervo Amaranto</Link>
+                    </div>
+                </div>
+
+                <div className="header-text">
+                        <div className="header-section">
+                        <Link to='/Guapoverso'>Guapoduo</Link>
                         </div>
-                    </li>
-                    <li>
-                        <Link to='Sobre'>Sobre</Link>
-                    </li>
-                </ul>
-            </nav>
+                </div>
+                <div className="header-text">
+                        <div className="header-section">
+                        <Link to='/'>Fanfics</Link>
+                        </div>
+                </div>
+                <div className="header-text">
+                        <div className="header-section">
+                        <Link to='/NotFound'>Fanarts</Link>
+                        </div>
+                </div>
+                <div className="header-text">
+                        <div className="header-section">
+                        <Link to='/Sobre'>Sobre</Link>
+                        </div>
+                </div>
+
+                <div className="button-header">
+                    <div>
+                        <button>
+                            <Link to='/'>Acessar</Link>
+                            <img src={acessar} alt="Ícone de acesso à conta." />
+                        </button>
+                    </div>
+                </div>
+            </div>
         </header>
         </>
     );

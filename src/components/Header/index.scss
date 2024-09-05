@@ -1,0 +1,72 @@
+@import url("../../css/index.scss");
+
+header {
+    background-color: var(--bar);
+    padding-block: 0px;
+}
+
+.header-content {
+    display: flex;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    img {
+        width: 55px;
+    }
+}
+
+.logo-header-text {
+    display: flex;
+    margin-block: auto;
+    justify-content:center;
+    font-size: 15px;
+    a {
+        font-family: "Roboto";
+        font-weight: 490;
+        line-height: 1;
+        color: #5F4B32;
+    }
+}
+
+.header-text {
+    display: flex;
+    margin-block: auto;
+    justify-content: flex-end;
+}
+
+.header-section {
+    padding-left: 140px;
+    padding-right: 5px;
+    a {
+        color: #5F4B32;
+        font-family: "Merriweather";
+        line-height: 1;
+        font-size: 17px; 
+    }
+}
+
+.button-header {
+    button {
+        background-color: #DFDFDF;
+        color: #5F4B32;
+        padding: 4px 8px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        margin: 15px 166px;
+        display: flex;
+        box-shadow: 2px 2px 8px #cfcfcf;
+    }
+
+    a {
+        font-family: "Meriweather";
+    }
+
+    img {
+        width: 15px;
+        margin-left: 5px;
+    }
+
+}
