@@ -3,6 +3,9 @@
 footer {
     background-color: var(--bar);
     padding-block: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {
