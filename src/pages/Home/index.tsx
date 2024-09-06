@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import '../../css/index.scss';
+import '../../stylus/index.scss';
 
 const Home = () =>{
     return(

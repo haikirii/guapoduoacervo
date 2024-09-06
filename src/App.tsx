@@ -1,15 +1,20 @@
 import { useState } from "react";
 import { AuthContext } from "./contexts/AuthContext";
 import { Paths } from "./routes";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import './stylus/index.scss';
 
 const App = () =>{
   const [isLogged, setIsLogged] = useState(false);
 
   return(
     <>
+    <ThemeProvider>
       <AuthContext.Provider value={{isLogged, setIsLogged}}>
-        <Paths />
-      </AuthContext.Provider>
+          <Paths />
+        </AuthContext.Provider>
+    </ThemeProvider>
+      
     </>
   );
 }
