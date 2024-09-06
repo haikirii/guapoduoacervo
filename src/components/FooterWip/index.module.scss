@@ -7,9 +7,15 @@
     width: 100%;
     &.serpia {
         background-color: $primary-color-serpia;
+        .logoFooterText span {
+            color: $text-color-serpia;
+        }
     }
     &.noite {
         background-color: $primary-color-noite;
+        .logoFooterText span {
+            color: $dourado;
+        }
     }
     .logoFooter {
         display: flex;

@@ -1,9 +1,12 @@
-
-
+import { Helmet } from 'react-helmet';
+import ConteudoWip from '../../components/ConteudoWip';
 const Wip = () => {
   return (
     <>
-      <div>teste</div>
+      <Helmet>
+        <title>Plantando Amarantos</title>
+      </Helmet>
+      <ConteudoWip />
     </>
   )
 }
