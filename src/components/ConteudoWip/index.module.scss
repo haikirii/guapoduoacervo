@@ -1,10 +1,15 @@
 @import '../../stylus/index.scss';
+// @import '../../../public/image/iefgda/asdfghjkl.png';
+
+
+
 
 .main {
     height: calc(100vh - 64px - 116px);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     &.serpia {
         background-color: $primary-color-serpia;
         color: $text-color-serpia;
@@ -12,9 +17,48 @@
     &.noite {
         background-color: $primary-color-noite;
         color: $dourado;
+        .one {
+            --Xpos: var(--Xpos);
+            --Ypos: var(--Ypos);
+            z-index: 1111;
+            opacity: 0.5;
+        }
+        .one:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: radial-gradient(
+              circle 9em at var(--Xpos) var(--Ypos),
+              rgba(94, 47, 100, 0.5),
+              rgba(125, 30, 144, 0)
+            );
+            // rgba(142, 37, 154, 0.3)
+          }
+        .mainImage {
+            background-image: url('../../../public/image/iefgda/asdfghjkl.png');
+        }
+    }
+    .mainImage {
+        position: fixed; /* Fixa o elemento na tela */
+        z-index: 20; /* Fica atrás dos outros conteúdos, mas à frente de `.one` */
+        width: 100vw;
+        height: calc(100vh - 64px - 116px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 20% bottom;
+        background-size: 1000px;
+    }
+    img {
+        z-index: 30;
+        opacity: 1;
     }
     .caixaTexto {
         max-width: 350px;
+        z-index: 40;
         span {
             font-family: "Roboto";
             &:first-child {

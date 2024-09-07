@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   height: 64px;
+  z-index: 1000;
   &.serpia {
     background-color: $primary-color-serpia;
     .logoHeaderText a {
