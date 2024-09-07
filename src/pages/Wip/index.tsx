@@ -1,12 +1,14 @@
 import { Helmet } from 'react-helmet';
-import ConteudoWip from '../../components/ConteudoWip';
+import Tag from '../../components/Tag';
 const Wip = () => {
   return (
     <>
       <Helmet>
         <title>Plantando Amarantos</title>
       </Helmet>
-      <ConteudoWip />
+      <Tag texto="Canon Divergence"/>
+      <Tag texto="Major Character Death"/>
+      <Tag texto="Happy Ending"/>
     </>
   )
 }
