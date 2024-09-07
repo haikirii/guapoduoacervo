@@ -6,9 +6,9 @@ const Wip = () => {
       <Helmet>
         <title>Plantando Amarantos</title>
       </Helmet>
+      <Tag texto="Happy ending"/>
       <Tag texto="Canon Divergence"/>
       <Tag texto="Major Character Death"/>
-      <Tag texto="Happy Ending"/>
     </>
   )
 }
