@@ -9,6 +9,7 @@ import Sobre from "../pages/Sobre";
 import Dashboard from "../pages/Dashboard";
 import Autores from "../pages/Autores/Autores";
 import { useContext } from "react";
+import Login from "../pages/Login";
 
 export const Paths = () =>{
     return(
@@ -16,7 +17,8 @@ export const Paths = () =>{
             <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <Routes>
                     <Route path={'/'} element={<PageLayout/> }>
-                        <Route index element={<Wip />}/>
+                    <Route index element={<Wip />}/>
+                    <Route path={'/login'} element={<Login />}/>
                         {/* <Route index element={<Home />}/>
                         <Route path={'/Guapoverso'} element={<Guapoverso />}/>
                         <Route path={'/Categoria'}element={<Categoria />}/>

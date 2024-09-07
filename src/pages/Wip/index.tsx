@@ -1,12 +1,17 @@
 import { Helmet } from 'react-helmet';
-import ConteudoWip from '../../components/ConteudoWip';
+import Plantando from '../../components/Plantando';
 const Wip = () => {
+
+  
+  const data = {title: "Nada por aqui", texto: "Ainda estamos plantando as sementes de amaranto..."}
+
   return (
     <>
-      <Helmet>
-        <title>Plantando Amarantos</title>
-      </Helmet>
-      <ConteudoWip />
+      <Helmet> <title>Plantando Amarantos</title> </Helmet>
+      <Plantando 
+        title={data.title} 
+        texto={data.texto}
+      />
     </>
   )
 }

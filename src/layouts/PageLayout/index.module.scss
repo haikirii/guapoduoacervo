@@ -1,0 +1,14 @@
+@import '../../stylus/index.scss';
+// @import '../../../public/image/iefgda/asdfghjkl.png';
+
+.main {
+    height: calc(100vh - 64px - 116px);
+    &.serpia {
+        background-color: $primary-color-serpia;
+        color: $text-color-serpia;
+    }
+    &.noite {
+        background-color: $primary-color-noite;
+        color: $dourado;
+    }
+}
