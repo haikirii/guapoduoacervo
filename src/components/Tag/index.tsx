@@ -5,7 +5,7 @@ interface TagProps {
 }
 
 const Tag = ({texto}: TagProps) => {
-    return  <button className={styles.teste}>{texto}</button>;
+    return  <button className={styles.tags}>{texto}</button>;
 }
 
 export default Tag;
