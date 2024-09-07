@@ -37,7 +37,7 @@ const Login = () => {
   }
 
 
-  const data = { title: "Nada por aqui", texto: "Ainda estamos plantando as sementes de amaranto..." }
+  const data = { title: "Nada por aqui", texto: "... se sente amado em meio a imensidão do tempo... Como nunca se sentiu antes." }
 
 
   return (

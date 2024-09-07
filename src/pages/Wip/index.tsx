@@ -8,10 +8,11 @@ const Wip = () => {
   return (
     <>
       <Helmet> <title>Plantando Amarantos</title> </Helmet>
-      <Plantando 
-        title={data.title} 
-        texto={data.texto}
-      />
+        <Plantando 
+          title={data.title} 
+          texto={data.texto}
+          botao={true}
+        />
     </>
   )
 }

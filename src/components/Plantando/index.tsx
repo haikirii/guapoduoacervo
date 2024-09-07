@@ -1,17 +1,22 @@
-import React, { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 import styles from './index.module.scss';
-import guapoduo from '/public/image/guapoduo/plantando.png';
+import guapoduo from '/image/guapoduo/plantando.png?url';
+import lente from '/image/guapoduo/lente.png?url';
 
-export default function Plantando(props: { title: string, texto: string}) {
+export default function Plantando(props: { title: string, texto: string, botao?: boolean}) {
     return (
-        <section>
-            <img src={guapoduo} alt="guapoduo" />
-            <div className={styles.caixaTexto}>
-                <span>  { props.title }</span>
-                <br />
-                <span> { props.texto } </span>
+        <div className={styles.container}>
+            <div className={styles.op1}>
+                <img src={guapoduo} className={styles.imagem} alt="guapoduo" />
+                {props.botao &&
+                    <div className={styles.botao}> <Link className= {styles.teste} to='/login'> <img src={lente} alt="guapoduo" /> </Link>  </div>
+                }
             </div>
-        </section>
+            <div className={styles.op2}>
+                <span className={styles.titulo}>  { props.title }</span>
+                <span className={styles.texto}> { props.texto } </span>
+            </div>
+        </div>
     )
 }
