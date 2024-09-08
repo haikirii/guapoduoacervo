@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './index.scss';
+import './index.module.scss';
 import acessar from "/image/components/Acessar.png";
 
 const BotaoHeader = (props: {label: string, alt: string}) =>{

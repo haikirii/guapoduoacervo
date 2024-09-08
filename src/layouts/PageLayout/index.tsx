@@ -8,10 +8,12 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 const PageLayout = () =>{
     const { theme } = useContext(ThemeContext);
 
+    document.body.classList.add('background-main');
+
     return(
         <>
             <Header/>
-            <main className={`${styles.main} ${styles[theme]}`}>
+            <main role="main" className={`${styles.main} ${styles[theme]}`}>
                 <Outlet/>
             </main>
             <FooterWip/>

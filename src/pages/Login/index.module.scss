@@ -1,5 +1,4 @@
 @import '../../stylus/index.scss';
-// @import '../../../public/image/iefgda/asdfghjkl.png';
 
 .main {
 
@@ -10,6 +9,7 @@
             z-index: 1111;
             opacity: 0.5;
         }
+
         .one:before {
             content: "";
             display: block;
@@ -18,20 +18,37 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: radial-gradient(
-              circle 9em at var(--Xpos) var(--Ypos),
-              rgba(94, 47, 100, 0.5),
-              rgba(125, 30, 144, 0)
-            );
+            background: radial-gradient(circle 9em at var(--Xpos) var(--Ypos),
+                    rgba(181, 63, 197, 0.5),
+                    rgba(221, 213, 223, 0));
             // rgba(142, 37, 154, 0.3)
-          }
+        }
+
         .mainImage {
-            background-image: url('../../../public/image/iefgda/asdfghjkl.png');
+            background-image: url('../../../public/image/iefgda/kealamlwkna.png');
+        }
+
+        .senha {
+            background: $secondary-color-noite;
+            border-color: $tertiary-color-noite;
+            color: $text-color-noite;
+        }
+
+        .botaoConfirma{
+            color: $text-color-noite;
         }
     }
+
+    .teste{
+        z-index: 800;
+    }
+
     .mainImage {
-        position: fixed; /* Fixa o elemento na tela */
-        z-index: 20; /* Fica atrás dos outros conteúdos, mas à frente de `.one` */
+        position: absolute;
+        top: 0;
+        /* Fixa o elemento na tela */
+        z-index: 20;
+        /* Fica atrás dos outros conteúdos, mas à frente de `.one` */
         width: 100vw;
         height: calc(100vh - 64px - 116px);
         background-repeat: no-repeat;
@@ -39,23 +56,41 @@
         background-position: 20% bottom;
         background-size: 1000px;
     }
+
     img {
         z-index: 30;
-        opacity: 1;
+        opacity: 0.8;
     }
+
     .caixaTexto {
         max-width: 350px;
         z-index: 40;
+
         span {
             font-family: "Roboto";
+
             &:first-child {
                 font-weight: 700;
                 font-size: 50px;
             }
+
             &:nth-child(3) {
                 font-weight: 500;
                 font-size: 30px;
             }
         }
+    }
+
+    .senha {
+        width: 60%;
+        font-size: 1.5vw;
+        padding: 8px;
+        border-radius: 6px;
+        border: 2px solid;
+    }
+
+    .senha::placeholder {
+        font-weight: bold;
+        opacity: 0.3;
     }
 }

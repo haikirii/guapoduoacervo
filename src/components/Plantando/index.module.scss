@@ -1,29 +1,26 @@
 @import '../../stylus/index.scss';
-// @import '../../../public/image/iefgda/asdfghjkl.png';
 
 
 div.container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    z-index: 900;
     position: relative;
+    padding-top: 64px;
 }
 
 div.op1 {
-    width: 40vw;
-    text-align: right;
-    padding: 5vw 2vw 0vw 0vw;
+    width: 35vw;
     min-width:30vw;
     position: relative;
-    top:20px;
-    left: 50px;
+
 }
 
 div.op2 {
     width: 35vw;
     min-width:40vw;
     float:right;
-    padding-top: 2vw;
+    padding-top: 124px;
 }
 
 span.titulo {
@@ -39,6 +36,10 @@ span.texto{
     font-size: 2vw;
     padding: 1.1vw;
     display: inline-block;
+}
+
+div.objFilho{
+    padding: 2vw 1.1vw;
 }
 
 .imagem{

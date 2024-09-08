@@ -29,31 +29,37 @@ const Login = () => {
   const style = {
     '--Xpos': `${mousePosition.x}px`,
     // eu nao sei pq mas ele ta puxando 60px pra baixo
-    '--Ypos': `${mousePosition.y - 60}px`,
+    '--Ypos': `${mousePosition.y}px`,
   } as React.CSSProperties;
 
   const styleClipPath = {
-    clipPath: `circle(40px at ${mousePosition.x}px ${mousePosition.y - 60}px)`,
+    clipPath: `circle(40px at ${mousePosition.x}px ${mousePosition.y}px)`,
   }
 
 
-  const data = { title: "Nada por aqui", texto: "... se sente amado em meio a imensidão do tempo... Como nunca se sentiu antes." }
-
+  const data = {
+    title: "Nada por aqui",
+    texto: "... se sente amado em meio a imensidão do tempo... Como nunca se sentiu antes."
+  }
 
   return (
     <>
-      <Helmet>
-        <title> Login </title>
-      </Helmet>
+      <Helmet> <title> Login </title> </Helmet>
 
       <main className={`${styles.main} ${styles[theme]}`}>
 
-        <div className={styles.one} style={style}></div>
-        <Plantando
-          title={data.title}
-          texto={data.texto}
-        />
+      <Plantando
+        title={data.title}
+        texto={data.texto}
+      >
+        <input 
+          className={styles.senha}
+          placeholder="Insira a senha"
+        ></input>
+        <a href='../../../public/temp/laverite.rar' download className={styles.botaoConfirma} > <span className="material-symbols-outlined"> send </span>  </a>
+      </Plantando>
 
+        <div className={styles.one} style={style}></div>     
         <div className={styles.mainImage}
           style={styleClipPath}
         ></div>
