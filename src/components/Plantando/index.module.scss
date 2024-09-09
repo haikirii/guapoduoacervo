@@ -34,6 +34,7 @@ div.op1 {
     }
     
     .botao:hover{
+        //!esqueci qual cor q tava
         box-shadow: 10px 10px 6px rgba(255, 0, 0, 1);
     }
     
@@ -93,12 +94,16 @@ div.objFilho{
             }
             .botao {
                 position: absolute;
-                top: 24.9%;
-                left: 70%;
-                transform: translate(-50% -50%) scale(80%);
-                -ms-transform: translate(-50% -50%) scale(80%);
+                top: 11%;
+                left: 67%;
+                transform: translate(-50% -50%);
+                -ms-transform: translate(-50% -50%);
                 margin-left: auto;
                 margin-right: auto;
+            }
+            .teste {
+                transform: scale(80%);
+                -ms-transform: scale(80%);
             }
         }
 
