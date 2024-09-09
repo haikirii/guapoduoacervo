@@ -36,7 +36,6 @@ const Login = () => {
     clipPath: `circle(40px at ${mousePosition.x}px ${mousePosition.y}px)`,
   }
 
-
   const data = {
     title: "Nada por aqui",
     texto: "... se sente amado em meio a imensidão do tempo... Como nunca se sentiu antes."
@@ -48,21 +47,28 @@ const Login = () => {
 
       <main className={`${styles.main} ${styles[theme]}`}>
 
-      <Plantando
-        title={data.title}
-        texto={data.texto}
-      >
-        <input 
-          className={styles.senha}
-          placeholder="Insira a senha"
-        ></input>
-        <a href='../../../public/temp/laverite.rar' download className={styles.botaoConfirma} > <span className="material-symbols-outlined"> send </span>  </a>
-      </Plantando>
+        <Plantando
+          title={data.title}
+          texto={data.texto}
+        >
+          <input 
+            className={styles.senha}
+            placeholder="Insira a senha"
+          ></input>
+          
+          <a href='../../../public/temp/laverite.rar' download className={styles.botaoConfirma}> 
+            <span className="material-symbols-outlined"> 
+              send 
+            </span>  
+          </a>
 
-        <div className={styles.one} style={style}></div>     
-        <div className={styles.mainImage}
-          style={styleClipPath}
-        ></div>
+        </Plantando>
+
+          <div className={styles.one} style={style}></div>     
+          <div className={styles.mainImage}
+            style={styleClipPath}
+          ></div>
+
       </main>
 
     </>

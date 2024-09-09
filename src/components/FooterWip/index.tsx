@@ -10,8 +10,7 @@ const FooterWip = () =>{
 
     return(
         <footer className={`${styles.footer} ${styles[theme]}`}>
-            <div className="wrapper">
-            <div className={styles.logoFooter}>
+            <div className={`${styles.logoFooter} wrapper`}>
                 <div className={styles.logoFooterImg}>
                     <img src={logo} alt="Logo do Acervo Amaranto" />
                 </div>
@@ -19,8 +18,6 @@ const FooterWip = () =>{
                     <span>Acervo</span>
                     <span>Amaranto</span>
                 </div>
-            </div>
-            
             </div>
         </footer>
     );

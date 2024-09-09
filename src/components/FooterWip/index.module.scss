@@ -1,11 +1,12 @@
 @use '../../stylus/cores/cores' as *;
 
 .footer {
-    padding-block: 40px;
+    height: 194px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
+    display: flex;
     &.serpia {
         background-color: $primary-color-serpia;
         .logoFooterText span {
