@@ -1,14 +1,15 @@
 import { Helmet } from 'react-helmet';
-import Tag from '../../components/Tag';
+import FanficListagem from '../../components/FanficListagem';
+
 const Wip = () => {
   return (
     <>
       <Helmet>
         <title>Plantando Amarantos</title>
       </Helmet>
-      <Tag texto="Happy ending"/>
-      <Tag texto="Canon Divergence"/>
-      <Tag texto="Major Character Death"/>
+      <FanficListagem/>
+      <FanficListagem/>
+      <FanficListagem/>
     </>
   )
 }
