@@ -6,32 +6,67 @@ div.container {
     display: flex;
     justify-content: center;
     z-index: 900;
+    height: calc(100vh - 64px - 193px);
 }
 
 div.op1 {
     padding-block: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .imagem{
+        width: 471px;
+        height: auto;
+    }
+    
+    .botao{
+        border-radius: 100%;
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        margin-left: auto;
+        margin-right: auto;
+        // a {
+        //     cursor: default;
+        // }
+    }
+    
+    .botao:hover{
+        box-shadow: 10px 10px 6px rgba(255, 0, 0, 1);
+    }
+    
+    .teste{
+        top: -41px;
+        left: -40px;
+        position: absolute;
+        border-radius: 100%;
+    }
 }
 
 div.op2 {
-    width: 35vw;
-    min-width:40vw;
-    float:right;
-    padding-top: 124px;
-}
-
-span.titulo {
-    width: 100%;
-    font-weight: 900;
-    font-size: 3vw;
-    display: inline-block;
-    padding: 0vw 1vw;
-    position: relative;
-}
-
-span.texto{
-    font-size: 2vw;
-    padding: 1.1vw;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-inline: 1vw;
+    width: 50vw;
+    span.titulo {
+        // width: 100%;
+        text-align: left;
+        font-weight: 900;
+        font-size: 4rem;
+        display: inline-block;
+        position: relative;
+    }
+    
+    span.texto{
+        font-size: 1.6rem;
+        // padding: 1.1vw;
+        display: inline-block;
+        text-align: left;
+    }
 }
 
 div.objFilho{
@@ -41,44 +76,14 @@ div.objFilho{
     padding: 2vw 1.1vw;
 }
 
-.imagem{
-    position: absolute;
-    left: 50px;
-    top: 20px;
-    height: 402px;
-    width: 471px;
-}
-
-.botao{
-    margin: 20px;
-    width: 49px;
-    height: 30px;
-    position: absolute;
-    left: 354px;
-    top: 47px;
-    border-radius: 100%;
-    align-items: center;
-}
-
-.botao:hover{
-    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.3);
-}
-
-.teste{
-    top: -41px;
-    left: -40px;
-    position: absolute;
-    border-radius: 100%;
-}
-
 @media (max-width: 1024px) {
     div.container {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
         width: 100vw;
+        align-content: space-between;
         div.op1 {
             padding-block: 0;
             .imagem {
@@ -88,10 +93,10 @@ div.objFilho{
             }
             .botao {
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(136%, -558%) scale(0.8);
-                -ms-transform: translate(0%, 0%) scale(0.8);
+                top: 24.9%;
+                left: 70%;
+                transform: translate(-50% -50%) scale(80%);
+                -ms-transform: translate(-50% -50%) scale(80%);
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -100,9 +105,6 @@ div.objFilho{
         div.op2 {
             font-size: large;
             min-width: 80vw;
-            float:right;
-            height: 40px;
-            padding-top: 0px;
             span.titulo {
                 width: 100%;
                 font-weight: 900;
