@@ -23,8 +23,6 @@ div.op1 {
     }
     
     .botao{
-        // width: 2vw;
-        height: auto;
         border-radius: 100%;
         position: absolute;
         top: 50%;
@@ -93,21 +91,25 @@ div.objFilho{
         div.op1 {
             padding-block: 0;
             .imagem {
+                position: static;
                 width: 376.8px; // 80% de 471
                 height: auto;
             }
             .botao {
                 position: absolute;
-                top: 53%;
-                left: 48%;
-                transform: translate(-50% -50%);
+                top: -1.7%;
+                left: 56.5%;
+                transform: translate(-50% 20%);
+                -ms-transform: translate(-50% 20%);
                 margin-left: auto;
                 margin-right: auto;
-                // background-color: red;
             }
             .teste {
+                position: absolute;
                 img {
-                    width: 30vw;
+                    width: auto;
+                    transform: scale(80%);
+                    -ms-transform: scale(80%);
                 }
             }
         }
