@@ -46,6 +46,7 @@
     .mainImage {
         position: absolute;
         top: 0;
+        left: 90;
         /* Fixa o elemento na tela */
         z-index: 20;
         /* Fica atrás dos outros conteúdos, mas à frente de `.one` */
@@ -53,7 +54,7 @@
         height: calc(100vh - 64px - 116px);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 20% bottom;
+        background-position: left 0% bottom 30px;
         background-size: 1000px;
     }
 
