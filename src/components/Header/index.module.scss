@@ -26,7 +26,7 @@
     width: 100%;
     .logoHeader {
       display: flex;
-    
+      cursor: pointer;
       img {
         width: 55px;
       }
@@ -35,12 +35,12 @@
         margin-block: auto;
         justify-content: center;
         font-size: 18px;
-      
         a {
-          font-family: "Roboto";
-          font-weight: 490;
+          font-family: "Figtree";
+          // acho q um mais perto do bold fica melhor
+          font-weight: 600;
+          // font-weight: 470;
           line-height: 1;
-          cursor: default;
         }
       }
     }

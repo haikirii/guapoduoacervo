@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AuthContext } from "./contexts/AuthContext";
 import { Paths } from "./routes";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import './stylus/index.scss';
+import './styles/index.scss';
 
 const App = () =>{
   const [isLogged, setIsLogged] = useState(false);
