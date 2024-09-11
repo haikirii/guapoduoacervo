@@ -49,6 +49,7 @@ div.op2 {
     padding-inline: 1vw;
     width: 50vw;
     span.titulo {
+        z-index: 1200;
         font-family: 'Figtree';
         text-align: left;
         font-weight: 900;
@@ -58,6 +59,7 @@ div.op2 {
     }
     
     span.texto{
+        z-index: 1200;
         font-family: 'Figtree';
         font-weight: 500;
         font-size: 2rem;
@@ -68,9 +70,8 @@ div.op2 {
 
 div.objFilho{
     display: flex;
-    justify-content: center;
-    
-    padding: 2vw 1.1vw;
+    align-items: center;
+    padding-block: 1.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -126,6 +127,11 @@ div.objFilho{
                 display: flex;
                 justify-content: center;
                 text-align: center;
+            }
+            div.objFilho{
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }

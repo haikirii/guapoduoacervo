@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Figtree';
     // por algum motivo eu nao consigo puxar pelo ../fonts/Figtree-VariableFont_wght.ttf
+    // ta dando erro no console mas ta funcionando mesmo assim
     src: url('../../../src/styles/fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
     url('../../../src/styles/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 700;

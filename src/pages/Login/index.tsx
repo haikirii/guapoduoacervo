@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import Plantando from '../../components/Plantando';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import InputArg from "../../components/InputArg";
 import styles from './index.module.scss';
 
 const Login = () => {
@@ -41,6 +42,11 @@ const Login = () => {
     texto: "... se sente amado em meio a imensidão do tempo... Como nunca se sentiu antes."
   }
 
+  const inputData = {
+    placeholder: "Insira a senha",
+    aRef: '../../../public/temp/laverite.rar',
+  }
+
   return (
     <>
       <Helmet> <title> Login </title> </Helmet>
@@ -51,16 +57,10 @@ const Login = () => {
           title={data.title}
           texto={data.texto}
         >
-          <input 
-            className={styles.senha}
-            placeholder="Insira a senha"
-          ></input>
-          
-          <a href='../../../public/temp/laverite.rar' download className={styles.botaoConfirma}> 
-            <span className="material-symbols-outlined"> 
-              send 
-            </span>  
-          </a>
+        <InputArg 
+          placeholder={inputData.placeholder} 
+          aRef={inputData.aRef}
+        />
 
         </Plantando>
 
