@@ -2,15 +2,15 @@
     font-family: 'Figtree';
     // por algum motivo eu nao consigo puxar pelo ../fonts/Figtree-VariableFont_wght.ttf
     // ta dando erro no console mas ta funcionando mesmo assim
-    src: url('../../../src/styles/fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
-    url('../../../src/styles/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
+    url('../fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gloock';
-    src: url('../../../src/styles/fonts/Gloock-Regular.ttf');
+    src: url('../fonts/Gloock-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }

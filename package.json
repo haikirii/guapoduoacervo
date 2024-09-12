@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "homepage": "https://haikirii.github.io/guapoduoacervo/",
+  "proxy": "http://localhost:5000/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -15,8 +16,11 @@
   "dependencies": {
     "antd-style": "^3.6.3",
     "axios": "^1.7.5",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
     "json-server": "^1.0.0-beta.2",
     "materialize-css": "^1.0.0-rc.2",
+    "nodemon": "^3.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",

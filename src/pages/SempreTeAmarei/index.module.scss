@@ -1,0 +1,7 @@
+div.container {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    z-index: 900;
+    height: calc(100vh - 64px - 193px);
+}
