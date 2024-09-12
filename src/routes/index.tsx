@@ -5,6 +5,8 @@ import NotFound from "../pages/NotFound";
 import Perpetuo from "../pages/Perpetuo";
 import Wip from "../pages/Wip";
 import SempreTeAmarei from "../pages/SempreTeAmarei";
+import Saudade from "../pages/Saudade";
+import Familia from "../pages/Familia";
 
 export const Paths = () => {
     return (
@@ -16,6 +18,8 @@ export const Paths = () => {
                         <Route path={'/login'} element={<Login />} />
                         <Route path={'/perpetuo'} element={<Perpetuo />} />
                         <Route path={'/sempreteamarei'} element={<SempreTeAmarei />} />
+                        <Route path={'/saudade'} element={<Saudade />} />
+                        <Route path={'/familia'} element={<Familia />} />
                         {/* <Route index element={<Home />}/>
                         <Route path={'/Guapoverso'} element={<Guapoverso />}/>
                         <Route path={'/Categoria'}element={<Categoria />}/>

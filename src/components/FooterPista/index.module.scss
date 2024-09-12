@@ -1,0 +1,39 @@
+@use '../../styles/cores/cores' as *;
+
+.footer {
+    height: 194px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    background-color: transparent;
+    .logoFooterText span {
+        color: $dourado;
+    }
+    .logoFooter {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 122px;
+        }
+    }
+
+    .logoFooterText {
+        display: flex;
+        flex-direction: column;
+        margin-block: auto;
+        justify-content: space-between;
+        span {
+            font-family: "Figtree";
+            font-weight: 700;
+            line-height: 1;
+            &:nth-child(1) {
+                font-size: 30px;
+            }
+            &:nth-child(2) {
+                font-size: 40px;
+            }
+        }
+    }
+}

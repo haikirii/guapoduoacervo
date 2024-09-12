@@ -1,7 +1,22 @@
 div.container {
-    margin-top: 64px;
     display: flex;
     justify-content: center;
-    z-index: 900;
-    height: calc(100vh - 64px - 193px);
+    height: 100vh;
+    background-image: url("../../../public/image/iefgda/background-livro.png");
+    background-size: cover;
+    img {
+        max-height: calc(100vh - 64px - 193px);
+        margin-top: 64px;
+    }
 }
+
+@media (max-width: 1024px) {
+    div.container {
+        img {
+            max-width: 100vw;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}
+

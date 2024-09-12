@@ -1,0 +1,11 @@
+div.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../../../public/image/iefgda/background-livro.png");
+    background-size: cover;
+    img {
+        height: calc(100vh - 64px - 193px);
+        margin-top: 64px;
+    }
+}
