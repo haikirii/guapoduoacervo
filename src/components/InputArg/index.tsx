@@ -19,7 +19,7 @@ const InputArg = (props: InputProps) => {
         placeholder={props.placeholder}
       ></input>
 
-      <Link className= {styles.botaoConfirma} to='/perpetuo'> 
+      <Link className= {`${styles.botaoConfirma} ${styles[theme]}`} to='/perpetuo'> 
         <span className={`material-symbols-outlined ${styles.svgMaterial}`}> send </span>  
       </Link> 
     </>
