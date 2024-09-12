@@ -11,7 +11,6 @@ const PageLayout = () =>{
         <>
             <HeaderWip/>
             <Outlet/>
-            <FooterWip/>
         </>
     );
 }

@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
-import FanficListagem from '../../components/FanficListagem';
+import FanficListagem from '../../components/CardFanfic/FanficListagem';
+import styles from './index.module.scss';
 
 const Wip = () => {
   return (
@@ -7,10 +8,11 @@ const Wip = () => {
       <Helmet>
         <title>Plantando Amarantos</title>
       </Helmet>
-      <FanficListagem/>
-      <FanficListagem/>
-      <FanficListagem/>
-    </>
+      <div className={styles.card}>
+        <FanficListagem/>
+        <FanficListagem/>
+      </div>
+     </>
   )
 }
 

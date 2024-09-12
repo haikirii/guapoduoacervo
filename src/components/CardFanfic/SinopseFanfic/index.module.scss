@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-.titulo{
+.teste{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 300;
     font-style: normal;
-    font-size: 25px;
-    color: #5F4B32;
+    font-size: 15px;
+    color: #000;
+    margin-top: 1%;
+    line-height: 15px;
+    text-align: justify;
 }
 
-.alinhamentotitulo{
-    padding-top: 15px;
-    padding-left: 3%;
+.alinhamentosinopse{
+    padding-top: 2.5%;
+    padding-left: 6%;
+    
 }

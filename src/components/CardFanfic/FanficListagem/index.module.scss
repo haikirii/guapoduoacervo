@@ -1,0 +1,44 @@
+.principal{
+    margin-top: 3%;
+    width: 50%;
+    display: flex;
+    align-items: end;
+}
+
+.background{
+    background: #fff;
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    padding: 1%;
+}
+.alinhaTag{
+    margin-left: 5%;
+    padding-top: 3%;
+    text-align: end;
+}
+
+.alinhaTitulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linha{
+    border-bottom: 2px #EE9399 solid;
+    margin-left: 5%;
+    max-width: 80%;
+}
+
+.alinhaConteudo{
+    margin-right: 6%;
+}
+
+.alinhaImagem{
+    margin-bottom: -0.7%;
+}
+
+.alinhaInfo{
+    display: flex;
+    justify-content: space-between;
+}

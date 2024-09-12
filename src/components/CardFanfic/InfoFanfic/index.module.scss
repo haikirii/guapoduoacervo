@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+.titulo{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    color: #5F4B32;
+    width: 150%;
+    max-width: 220%;
+}
+
+.alinhaInfo{
+    padding-top: 2%;
+    padding-left: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6%;
+}

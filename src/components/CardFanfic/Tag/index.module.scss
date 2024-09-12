@@ -5,14 +5,19 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 14px;
-    background: #5F4B3280;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 12px;
+    background: #5f4b3280;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     border-radius: 20px;
     color: #fcfcfc;
     margin: 2px;
     vertical-align: text-bottom;
+}
+
+.tags:hover{
+    background-color: #5F4B32;
+    cursor: pointer;
 }
