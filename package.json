@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd-style": "^3.6.3",
     "axios": "^1.7.5",
     "json-server": "^1.0.0-beta.2",
     "materialize-css": "^1.0.0-rc.2",

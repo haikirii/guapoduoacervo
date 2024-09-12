@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 interface InputProps {
   placeholder: string;
@@ -17,15 +18,10 @@ const InputArg = (props: InputProps) => {
         className={`${styles.senha} ${styles[theme]}`}
         placeholder={props.placeholder}
       ></input>
-      
-      <a  href='../../../public/temp/laverite.rar' 
-          download 
-          className={`${styles.botaoConfirma} ${styles[theme]}`}
-      > 
-        <span className={`material-symbols-outlined ${styles.svgMaterial}`}> 
-          send 
-        </span>  
-      </a>
+
+      <Link className= {styles.botaoConfirma} to='/perpetuo'> 
+        <span className={`material-symbols-outlined ${styles.svgMaterial}`}> send </span>  
+      </Link> 
     </>
   )
 }
