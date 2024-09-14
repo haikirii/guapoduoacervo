@@ -30,8 +30,7 @@ const InputArg = (props: InputProps) => {
 
   const handleLogin = () => {
     const encodedPassword = btoa(password);
-    console.log(encodedPassword
-    )
+    
     if (pass.includes(encodedPassword)) {
       setIsError(false);
       navigate('/perpetuo');
