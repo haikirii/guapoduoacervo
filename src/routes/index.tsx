@@ -7,6 +7,8 @@ import Wip from "../pages/Wip";
 import SempreTeAmarei from "../pages/SempreTeAmarei";
 import Saudade from "../pages/Saudade";
 import Familia from "../pages/Familia";
+import Sobreviventes from "../pages/Sobreviventes";
+import TemNadaAqui from "../pages/TemNadaAqui";
 
 export const Paths = () => {
     return (
@@ -17,6 +19,8 @@ export const Paths = () => {
                         <Route index element={<Wip />} />
                         <Route path={'/login'} element={<Login />} />
                         <Route path={'/perpetuo'} element={<Perpetuo />} />
+                        <Route path={'/sobreviventes'} element={<Sobreviventes/>} />
+                        <Route path={'/temnadaaqui'} element={<TemNadaAqui/>} />
                         <Route path={'/sempreteamarei'} element={<SempreTeAmarei />} />
                         <Route path={'/saudade'} element={<Saudade />} />
                         <Route path={'/familia'} element={<Familia />} />

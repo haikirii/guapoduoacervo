@@ -3,14 +3,12 @@ import styles from './index.module.scss';
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { Button } from "antd";
-import lente from '/image/guapoduo/lente.png?url';
-import { Link } from 'react-router-dom';
 
 const Perpetuo = () => {
 
     const { theme } = useContext(ThemeContext);
     var data = "Fragmentos outrora dispersos, agora entrelaçados em perfeita fusão. O toque da alquimia os sela, num corpo onde tudo se torna um, indivisível e eterno."
-    var url = "https://www.mediafire.com/file/t6c70ek32e8uzcd/laverite.rar/file";
+    var url = "https://www.mediafire.com/file/s8v0auopzeyryy9/Laverite.rar/file";
 
     const handleRedirect = () => {
       window.open(url, '_blank');
@@ -29,6 +27,7 @@ const Perpetuo = () => {
             <span className={`material-symbols-outlined ${styles.svgMaterial} ${styles[theme]} ${styles.glitch}`} data-text="download"> download </span>  
           </Button>
         </div>
+
     </>
   )
 }
