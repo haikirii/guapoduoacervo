@@ -23,12 +23,16 @@
     &:focus {
         outline: none;
     }
+    &.erro {
+        border: 1px solid red;
+    }
 }
 
 .botaoConfirma{
     z-index: 1200;
     display: flex;
     margin-left: 1rem;
+    background-color: transparent;
     .svgMaterial {
         font-size: 2rem;
     }

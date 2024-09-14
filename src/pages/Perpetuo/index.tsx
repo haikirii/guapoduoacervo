@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Perpetuo = () => {
 
     const { theme } = useContext(ThemeContext);
-    var data = "Algum texto de pista para indicar a senha do .rar, que será: 'amalgamado'"
+    var data = "Fragmentos outrora dispersos, agora entrelaçados em perfeita fusão. O toque da alquimia os sela, num corpo onde tudo se torna um, indivisível e eterno."
     var url = "https://www.mediafire.com/file/t6c70ek32e8uzcd/laverite.rar/file";
 
     const handleRedirect = () => {

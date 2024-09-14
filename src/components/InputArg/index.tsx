@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { SetStateAction, useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface InputProps {
   placeholder: string;
@@ -12,16 +12,48 @@ const InputArg = (props: InputProps) => {
 
   const { theme } = useContext(ThemeContext);
 
+  const navigate = useNavigate();
+
+  const [password, setPassword] = useState('');
+  const pass = [
+    "cGVycGV0dW8=",
+    "cGVycOl0dW8=",
+    "UGVycOl0dW8=",
+    "UGVycGV0dW8="
+  ]
+
+  const [isError, setIsError] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(e.target.value);
+  };
+
+  const handleLogin = () => {
+    const encodedPassword = btoa(password);
+    console.log(encodedPassword
+    )
+    if (pass.includes(encodedPassword)) {
+      setIsError(false);
+      navigate('/perpetuo');
+    } else {
+      setIsError(true);
+    }
+    
+  };
+
   return (
     <>
       <input 
-        className={`${styles.senha} ${styles[theme]}`}
+        className={`${styles.senha} ${styles[theme]} ${isError ? styles.erro : ''}`}
         placeholder={props.placeholder}
+        onChange={handleInputChange} 
       ></input>
 
-      <Link className= {`${styles.botaoConfirma} ${styles[theme]}`} to='/perpetuo'> 
-        <span className={`material-symbols-outlined ${styles.svgMaterial}`}> send </span>  
-      </Link> 
+      <button 
+        className={`${styles.botaoConfirma} ${styles[theme]}`}
+        onClick={handleLogin}>
+          <span className={`material-symbols-outlined ${styles.svgMaterial}`}> send </span>  
+      </button>
     </>
   )
 }
