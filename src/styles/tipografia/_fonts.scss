@@ -1,21 +1,17 @@
-@font-face {
-    font-family: 'Figtree';
-    // por algum motivo eu nao consigo puxar pelo ../fonts/Figtree-VariableFont_wght.ttf
-    // ta dando erro no console mas ta funcionando mesmo assim
-    // src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
-    // url('../fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
-    src: url('../../styles/fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
-    url('../../styles/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 700;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Figtree';
+//     src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
+//     url('/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+//     font-weight: 100 700;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Gloock';
-    src: url('../fonts/Gloock-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Gloock';
+//     src: url('/fonts/Gloock-Regular.ttf');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 body {
     font-family: 'Figtree', Arial, Helvetica, sans-serif;
