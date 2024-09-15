@@ -1,11 +1,96 @@
-.container {
+@import '../../styles/index.scss';
+
+.main {
+  padding-top: 64px;
+  height: calc(100vh - 64px - 130px);
+  display: flex;
+  flex-direction: row;
+  color: $text-color-serpia;
+  .containerImagem {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    .imagem {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .containerTicket {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    width: 60%;
-    margin-left: 20%;
-    padding-top: 128px;
-    min-height: 100%;
+    .ticket {
+      background-color: #fff;
+      border-radius: 10px;
+      width: 30rem;
+      padding: 20px;
+      .titulo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        border-bottom: 3px solid #EE9399;
+      }
+      .ticketNumero {
+        // background-color: rgb(221, 221, 221);
+        display: flex;
+        justify-content: end;
+        align-items: flex-start;
+        padding-block: 5px;
+        .txtTck {
+          font-size: .9rem;
+          font-weight: 700;
+        }
+        .nTck {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+      .textoAbaixo {
+        line-height: 1.1rem;
+        color: #000;
+        font-size: 1rem;
+      }
+    }
   }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    .containerImagem {
+      width: 70%;
+    }
+    .containerTicket {
+      width: 70%;
+      .ticket {
+        .titulo {
+          font-size: 1.2rem;
+        }
+        .ticketNumero {
+          padding-block: 5px;
+          .txtTck {
+            font-size: .9rem;
+          }
+          .nTck {
+            font-size: 2rem;
+          }
+        }
+        .textoAbaixo {
+          line-height: .8rem;
+          font-size: .7rem;
+        }
+      }
+    }
+    * {
+      margin: auto ;
+    }
+  }
+}
+
+
  
