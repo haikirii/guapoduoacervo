@@ -1,8 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../../components/Header";
-import FooterWip from "../../components/FooterWip";
-import HeaderPista from "../../components/HeaderPista";
-import FooterPista from "../../components/FooterPista";
+import Footer from "../../components/Footer";
 import styles from "./index.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -18,11 +16,11 @@ const PageLayout = () =>{
 
     return(
         <>
-            {isPaginasPistas ? <HeaderPista /> : <Header/>}
+            <Header/>
             <main role="main" className={`${styles.main} ${styles[theme]}`}>
                 <Outlet/>
             </main>
-            {isPaginasPistas ? <FooterPista /> : <FooterWip/>}
+            <Footer/>
         </>
     );
 }
