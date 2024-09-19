@@ -1,11 +1,11 @@
 @use '../../styles/cores/cores' as *;
+@import '../../styles/index.scss';
 
 .footer {
-    height: 194px;
+    height: $footer-size;
     position: fixed;
     bottom: 0;
     width: 100vw;
-    z-index: 1000;
     display: flex;
     &.serpia {
         background-color: $primary-color-serpia;

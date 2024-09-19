@@ -1,7 +1,7 @@
 @import '../../styles/index.scss';
 
 .main {
-    min-height: calc(100vh);
+    min-height: calc(100vh - $footer-size - $header-size);
     &.serpia {
         background-color: $primary-color-serpia;
         color: $text-color-serpia;

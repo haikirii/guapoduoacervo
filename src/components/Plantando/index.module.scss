@@ -4,7 +4,6 @@ div.container {
     margin-top: 64px;
     display: flex;
     justify-content: center;
-    z-index: 900;
     height: calc(100vh - 64px - 193px);
 }
 
@@ -49,7 +48,6 @@ div.op2 {
     padding-inline: 1vw;
     width: 50vw;
     span.titulo {
-        z-index: 1200;
         font-family: 'Figtree';
         text-align: left;
         font-weight: 900;
@@ -59,7 +57,6 @@ div.op2 {
     }
     
     span.texto{
-        z-index: 1200;
         font-family: 'Figtree';
         font-weight: 500;
         font-size: 2rem;
