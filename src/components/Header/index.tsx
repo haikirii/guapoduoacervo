@@ -1,55 +1,29 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-import './index.scss';
+import styles from "./index.module.scss";
 import logo from "/image/components/Logo.png";
-import acessar from "/image/components/Acessar.png";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import BotaoMudarTema from "../BotaoMudarTema";
 
-const Header = () =>{
-    return(
-        <>
-        <header>  
-            <div className="header-content wrapper">
-                <div className="logo-header">
-                    <div className="logo-header-img">
-                        <img src={logo} alt="Logo do Acervo Amaranto" />
-                    </div>
-                    <div className="logo-header-text">
-                        <Link to='/'>Acervo Amaranto</Link>
-                    </div>
-                </div>
+const Header = () => {
 
-                <div className="header-text">
-                        <div className="header-section">
-                        <Link to='/Guapoverso'>Guapoduo</Link>
-                        </div>
-                </div>
-                <div className="header-text">
-                        <div className="header-section">
-                        <Link to='/'>Fanfics</Link>
-                        </div>
-                </div>
-                <div className="header-text">
-                        <div className="header-section">
-                        <Link to='/NotFound'>Fanarts</Link>
-                        </div>
-                </div>
-                <div className="header-text">
-                        <div className="header-section">
-                        <Link to='/Sobre'>Sobre</Link>
-                        </div>
-                </div>
+  const { theme } = useContext(ThemeContext);
 
-                <div className="button-header">
-                    <div>
-                        <button>
-                            <Link to='/'>Acessar</Link>
-                            <img src={acessar} alt="Ícone de acesso à conta." />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </header>
-        </>
-    );
-}
+  return (
+    <header className={`${styles.header} ${styles[theme]}`}>
+      <div className={`${styles.headerContent} wrapper`}>
+        <div className={styles.logoHeader}>
+          <div className={styles.logoHeaderImg}>
+            <img src={logo} alt="Logo do Acervo Amaranto" />
+          </div>
+          <div className={styles.logoHeaderText}>
+            <Link to="/">Acervo Amaranto</Link>
+          </div>
+        </div>
+        <BotaoMudarTema />
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

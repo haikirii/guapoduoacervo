@@ -1,0 +1,16 @@
+.text {
+    display: flex;
+    margin-block: auto;
+    justify-content: flex-end;
+}
+
+.section {
+    padding-left: 140px;
+    padding-right: 5px;
+    a {
+        color: #5F4B32;
+        font-family: "Merriweather";
+        line-height: 1;
+        font-size: 17px; 
+    }
+}
