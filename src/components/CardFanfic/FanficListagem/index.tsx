@@ -2,6 +2,7 @@ import SinopseFanfic from '../SinopseFanfic';
 import Tag from '../Tag';
 import TituloFanfic from '../TituloFanfic';
 import styles from './index.module.scss';
+import '../../../stylus/index.scss';
 import Classificacao from '../../../../public/image/classificacao/classificacao-12-anos-logo.png';
 import Capa from '../../../../public/temp/capa.jpg';
 import ClassificacaoLogo from '../ClassificacaoLogo';
@@ -29,7 +30,7 @@ const FanficListagem = () => {
                     <div className={styles.alinhaInfo}>
                         <InfoFanfic imagem={dataIcon} info="aug/2023" />
                         <InfoFanfic imagem={capIcon} info="19/?" />
-                        <InfoFanfic imagem={comentarioIcon} info="138" />
+                        <InfoFanfic imagem={comentarioIcon} info={"138"} />
                     </div>
                     <SinopseFanfic texto="Vazio. Tédio. Insatisfação. Isso era tudo que ele sentia, e só precisava de uma distração... O que ele não esperava, no entanto, é que essa distração viria na forma de um lindo mexicano que estava prestes a endireitar sua vida torta para sempre."/>
                     <div className={styles.alinhaTag}>

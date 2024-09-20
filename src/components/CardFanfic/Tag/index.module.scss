@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+$cor-fundo: #5f4b3280;
+$cor-fundo-hover: #5F4B32;
 
 .tags{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
-    font-size: 12px;
-    background: #5f4b3280;
+    font-size: .75rem;
+    background: $cor-fundo;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 1vw;
     padding-right: 1vw;
     border-radius: 20px;
     color: #fcfcfc;
-    margin: 2px;
+    margin: .18vw;
     vertical-align: text-bottom;
 }
 
 .tags:hover{
-    background-color: #5F4B32;
+    background-color: $cor-fundo-hover;
     cursor: pointer;
 }

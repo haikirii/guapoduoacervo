@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Figtree";
+    src: local(Figtree), url(../../../stylus/fonts/Figtree-VariableFont_wght.ttf);
+}
+
 .principal{
     margin-top: 2vh;
     display: flex;
@@ -24,7 +29,7 @@
 }
 .linha{
     border-bottom: 2px #EE9399 solid;
-    margin-left: 0.6vw;
+    margin-left: .6vw;
     max-width: 85%;
 }
 
@@ -33,7 +38,7 @@
 }
 
 .alinhaImagem{
-    margin-bottom: -0.6vh;
+    margin-bottom: -.6vh;
 }
 
 .alinhaInfo{
