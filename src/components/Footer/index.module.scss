@@ -1,46 +1,81 @@
 @import '../../styles/index.scss';
 
+h4 {
+    // font-family: 'Figtree';
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
 .footer {
     height: $footer-size;
+    border-top: 1px solid $dourado;
+
+    display: flex;
+    flex-direction: column;
+
     position: fixed;
     bottom: 0;
     width: 100vw;
-    display: flex;
-    &.serpia {
-        background-color: $primary-color-serpia;
-        .logoFooterText span {
-            color: $text-color-serpia;
-        }
+
+    background-color: #FCFCFC;
+    color: #353535;
+
+    & > * {
+        width: 100%;
     }
-    &.noite {
-        background-color: $primary-color-noite;
-        .logoFooterText span {
-            color: $dourado;
-        }
-    }
-    .logoFooter {
+
+    .container {
+        margin-top: 50px;
+        width: 100%;
         display: flex;
-        justify-content: center;
-        img {
-            width: 122px;
+        justify-content: space-between;
+        div * {
+            display: flex;
+        }
+        div a {
+            font-size: 1rem;
+            font-weight: 450;
+            margin-bottom: 8px;
+            &:hover {
+                // provisorio
+                color: black;
+            }
+        }
+        .contato {
+            .contatoSvg {
+                svg {
+                    width: 20px;
+                    margin-right: 10px;
+                }
+            }
         }
     }
 
-    .logoFooterText {
+    .lang {
         display: flex;
-        flex-direction: column;
-        margin-block: auto;
-        justify-content: space-between;
-        span {
-            font-family: "Figtree";
-            font-weight: 700;
-            line-height: 1;
-            &:nth-child(1) {
-                font-size: 30px;
-            }
-            &:nth-child(2) {
-                font-size: 40px;
-            }
+        justify-content: flex-end;
+        button {
+            background-color: transparent;
+            margin-left: 10px;
+            cursor: pointer;
         }
     }
+
+    .comerc {
+        display: flex;
+        justify-content: center;
+
+    }
+    // &.serpia {
+    //     background-color: $primary-color-serpia;
+    //     .logoFooterText span {
+    //         color: $text-color-serpia;
+    //     }
+    // }
+    // &.noite {
+    //     background-color: $primary-color-noite;
+    //     .logoFooterText span {
+    //         color: $dourado;
+    //     }
+    // }
 }

@@ -13,4 +13,7 @@ $header-size: 64px;
     border: none;
     text-decoration: none;
     text-transform: none;
+    &:visited {
+        color: inherit;
+    }
 }
