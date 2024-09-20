@@ -28,26 +28,6 @@ h4 {
     .container {
         margin-top: 50px;
         justify-content: space-between;
-        div * {
-            display: flex;
-        }
-        div a {
-            font-size: 1rem;
-            font-weight: 450;
-            margin-bottom: 8px;
-            &:hover {
-                // provisorio
-                color: black;
-            }
-        }
-        .contato {
-            .contatoSvg {
-                svg {
-                    width: 20px;
-                    margin-right: 10px;
-                }
-            }
-        }
     }
 
     .lang {
