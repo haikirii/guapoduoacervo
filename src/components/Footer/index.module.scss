@@ -22,11 +22,11 @@ h4 {
 
     & > * {
         width: 100%;
+        display: flex;
     }
 
     .container {
         margin-top: 50px;
-        display: flex;
         justify-content: space-between;
         div * {
             display: flex;
@@ -51,19 +51,11 @@ h4 {
     }
 
     .lang {
-        display: flex;
         justify-content: flex-end;
-        button {
-            background-color: transparent;
-            margin-left: 10px;
-            cursor: pointer;
-        }
     }
 
     .comerc {
-        display: flex;
         justify-content: center;
-
     }
     
     // &.serpia {

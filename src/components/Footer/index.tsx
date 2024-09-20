@@ -5,6 +5,8 @@ import espImg from '/image/components/languages/esp.png'
 import engImg from '/image/components/languages/eng.png'
 import styles from "./index.module.scss";
 
+import BotaoMudarIdioma from '../BotaoMudarIdioma';
+
 const Footer = () =>{
 
     const { theme } = useContext(ThemeContext);
@@ -57,15 +59,11 @@ const Footer = () =>{
                 </div>
             </div>
             <div className={`${styles.lang} wrapper`}>
-                <button className={`${styles.br}`}>
-                    <img src={brImg} alt="botão mudar idioma para português" />
-                </button>
-                <button className={`${styles.esp}`}> 
-                    <img src={espImg} alt="botão mudar idioma para espanhol" />
-                </button>
-                <button className={`${styles.eng}`}>   
-                    <img src={engImg} alt="botão mudar idioma para inglês" />
-                </button>
+                <BotaoMudarIdioma src={brImg} lang={'portugês'} />
+                
+                <BotaoMudarIdioma src={espImg} lang={'portugês'} />
+                
+                <BotaoMudarIdioma src={engImg} lang={'portugês'} />
             </div>
             <div className={`${styles.comerc} wrapper`}>
                 <span>Acervo Amarando © 2024</span>
