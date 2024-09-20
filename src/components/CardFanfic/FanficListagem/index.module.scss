@@ -1,6 +1,5 @@
 .principal{
-    margin-top: 3%;
-    width: 50%;
+    margin-top: 2vh;
     display: flex;
     align-items: end;
 }
@@ -11,11 +10,10 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     align-items: center;
-    padding: 1%;
+    padding: 1.5vw;
 }
 .alinhaTag{
-    margin-left: 5%;
-    padding-top: 3%;
+    padding-top: 2.5vh;
     text-align: end;
 }
 
@@ -26,16 +24,16 @@
 }
 .linha{
     border-bottom: 2px #EE9399 solid;
-    margin-left: 5%;
-    max-width: 80%;
+    margin-left: 0.6vw;
+    max-width: 85%;
 }
 
 .alinhaConteudo{
-    margin-right: 6%;
+    margin-right: 2vw;
 }
 
 .alinhaImagem{
-    margin-bottom: -0.7%;
+    margin-bottom: -0.6vh;
 }
 
 .alinhaInfo{
