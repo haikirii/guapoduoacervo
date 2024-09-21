@@ -1,0 +1,19 @@
+@import '../../styles/index.scss';
+
+.banner {
+    width: 100vw;
+    background-image: url('/temp/Banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    .bannerContent {
+        color: #000;
+        h1 {
+            font-family: 'Gloock', Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.6rem;
+        }
+        p {
+            font-size: 2.2rem;
+        }
+    }
+}
