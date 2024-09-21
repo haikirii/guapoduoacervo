@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-const Wip = () => {
+const Home = () => {
 
   return (
     <>
@@ -9,4 +9,4 @@ const Wip = () => {
   )
 }
 
-export default Wip;
+export default Home;
