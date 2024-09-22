@@ -1,0 +1,136 @@
+@import '../../styles/index.scss';
+
+div.container {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 64px - 193px);
+}
+
+div.op1 {
+    padding-block: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .imagem{
+        // width: 471px;
+        // max-width: 100%;
+        width: 40vw;
+        height: auto;
+    }
+    
+    .botao{
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(35%, -175%);
+        -ms-transform: translate(35%, -175%);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .teste{
+        border-radius: 100%;
+        img {
+            width: 12.4dvw;
+        }
+    }
+}
+
+div.op2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-inline: 1vw;
+    width: 50vw;
+    span.titulo {
+        font-family: 'Figtree';
+        text-align: left;
+        font-weight: 900;
+        font-size: 4rem;
+        display: inline-block;
+        position: relative;
+    }
+    
+    span.texto{
+        font-family: 'Figtree';
+        font-weight: 500;
+        font-size: 2rem;
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+div.objFilho{
+    display: flex;
+    align-items: center;
+    padding-block: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    div.container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        align-content: space-between;
+        div.op1 {
+            padding-block: 0;
+            .imagem {
+                position: static;
+                width: 376.8px; // 80% de 471
+                height: auto;
+            }
+            .botao {
+                position: absolute;
+                top: -1.7%;
+                left: 56.5%;
+                transform: translate(-50% 20%);
+                -ms-transform: translate(-50% 20%);
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .teste {
+                position: absolute;
+                img {
+                    width: auto;
+                    transform: scale(80%);
+                    -ms-transform: scale(80%);
+                }
+            }
+        }
+
+        div.op2 {
+            font-size: large;
+            min-width: 80vw;
+            span.titulo {
+                width: 100%;
+                font-weight: 900;
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            span.texto{
+                font-size: 1.4rem;
+                padding: 0vw;
+                display: inline-block;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            div.objFilho{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+}

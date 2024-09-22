@@ -1,0 +1,12 @@
+@import './src/styles/index.scss';
+
+body {
+    &.serpia {
+        background-color: $primary-color-serpia;
+        color: $text-color-serpia;
+    }
+    &.noite {
+        background-color: $primary-color-noite;
+        color: $dourado;
+    }
+}

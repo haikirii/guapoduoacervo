@@ -1,0 +1,48 @@
+@import '../../styles/index.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  height: $header-size;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  &.serpia {
+    background-color: $primary-color-serpia;
+    .logoHeaderText a {
+      color: $text-color-serpia;
+    }
+  }
+  &.noite {
+    background-color: $primary-color-noite;
+    .logoHeaderText a {
+      color: $dourado;
+    }
+  }
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .logoHeader {
+      display: flex;
+      cursor: pointer;
+      img {
+        width: 55px;
+      }
+      .logoHeaderText {
+        display: flex;
+        margin-block: auto;
+        justify-content: center;
+        font-size: 18px;
+        a {
+          font-family: "Figtree";
+          // acho q um mais perto do bold fica melhor
+          font-weight: 600;
+          // font-weight: 470;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

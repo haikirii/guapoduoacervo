@@ -1,0 +1,18 @@
+@import './base/reset';
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+html {
+    font-size: 100%;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
