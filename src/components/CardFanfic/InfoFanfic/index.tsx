@@ -9,7 +9,7 @@ interface InfoProps {
 const InfoFanfic = ({imagem, info}: InfoProps) => {
     return  (
         <div className={styles.alinhaInfo}>
-            <IconInfo nomeImagem={imagem}/><p className={styles.titulo}>{info}</p>
+            <IconInfo nomeImagem={imagem}/><p className={styles.texto}>{info}</p>
         </div>
     );
 }
