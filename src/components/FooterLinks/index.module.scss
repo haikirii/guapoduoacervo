@@ -1,0 +1,15 @@
+.footerLinks {
+    flex-direction: column;
+    * {
+        display: flex;
+    }
+    a {
+        font-size: 1rem;
+        font-weight: 450;
+        margin-bottom: 8px;
+        &:hover {
+            // provisorio
+            color: black;
+        }
+    }
+}
