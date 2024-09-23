@@ -1,22 +1,14 @@
 import { Helmet } from 'react-helmet';
-import Plantando from '../../components/Plantando';
-const Wip = () => {
+import BannerHome from '../../components/BannerHome';
 
-  const data = {
-    title: "Nada por aqui",
-    texto: "Ainda estamos plantando as sementes de amaranto..."
-  }
+const Home = () => {
 
   return (
     <>
       <Helmet> <title>Plantando Amarantos</title> </Helmet>
-        <Plantando 
-          title={data.title} 
-          texto={data.texto}
-          botao={true}
-        />
+      <BannerHome />
     </>
   )
 }
 
-export default Wip;
+export default Home;
