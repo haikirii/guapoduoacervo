@@ -3,6 +3,9 @@
     src: local(Figtree), url(../../../stylus/fonts/Figtree-VariableFont_wght.ttf);
 }
 
+$fundo-card: #fff;
+$linha-titulo: #EE9399;
+
 .principal{
     margin-top: 2vh;
     display: flex;
@@ -10,7 +13,7 @@
 }
 
 .background{
-    background: #fff;
+    background: $fundo-card;
     display: flex;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -28,7 +31,7 @@
     justify-content: space-between;
 }
 .linha{
-    border-bottom: 2px #EE9399 solid;
+    border-bottom: 2px solid $linha-titulo;
     margin-left: .6vw;
     max-width: 85%;
 }
@@ -37,7 +40,7 @@
     margin-right: 2vw;
 }
 
-.alinhaImagem{
+.alinhaCapa{
     margin-bottom: -.6vh;
 }
 
