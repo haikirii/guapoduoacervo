@@ -5,6 +5,10 @@ import styles from "./index.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from '../../contexts/ThemeContext';
 
+//Excluir depois
+import FooterWip from "../../components/FooterWip";
+import HeaderWip from "../../components/HeaderWip";
+
 const PageLayout = () =>{
     const { theme } = useContext(ThemeContext);
     const location = useLocation();

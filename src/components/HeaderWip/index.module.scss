@@ -1,0 +1,45 @@
+@import '../../stylus/index.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  z-index: 1000;
+  &.serpia {
+    background-color: $primary-color-serpia;
+    .logoHeaderText a {
+      color: $text-color-serpia;
+    }
+  }
+  &.noite {
+    background-color: $primary-color-noite;
+    .logoHeaderText a {
+      color: $dourado;
+    }
+  }
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .logoHeader {
+      display: flex;
+    
+      img {
+        width: 55px;
+      }
+      .logoHeaderText {
+        display: flex;
+        margin-block: auto;
+        justify-content: center;
+        font-size: 18px;
+      
+        a {
+          font-family: "Roboto";
+          font-weight: 490;
+          line-height: 1;
+          cursor: default;
+        }
+      }
+    }
+  }
+}

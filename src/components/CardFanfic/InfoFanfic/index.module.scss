@@ -1,0 +1,17 @@
+.infoFonte{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .9rem;
+    color: #5F4B32;
+}
+
+.alinhaInfo{
+    padding-top: 1vh;
+    padding-left: .6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8vw;
+}

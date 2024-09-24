@@ -1,0 +1,46 @@
+@use '../../stylus/cores/cores' as *;
+
+.footer {
+    padding-block: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    &.serpia {
+        background-color: $primary-color-serpia;
+        .logoFooterText span {
+            color: $text-color-serpia;
+        }
+    }
+    &.noite {
+        background-color: $primary-color-noite;
+        .logoFooterText span {
+            color: $dourado;
+        }
+    }
+    .logoFooter {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 122px;
+        }
+    }
+
+    .logoFooterText {
+        display: flex;
+        flex-direction: column;
+        margin-block: auto;
+        justify-content: space-between;
+        span {
+            font-family: "Rhodium Libre", serif;
+            font-weight: 700;
+            line-height: 1;
+            &:nth-child(1) {
+                font-size: 30px;
+            }
+            &:nth-child(2) {
+                font-size: 40px;
+            }
+        }
+    }
+}
