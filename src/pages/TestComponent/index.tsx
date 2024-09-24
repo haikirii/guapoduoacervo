@@ -30,6 +30,13 @@ const TestComponent = () => {
           profilePic={cardFanartInfo1.profilePic}
           profileName={cardFanartInfo1.profileName}
         />
+        
+      <CardFanart 
+          fanart={cardFanartInfo2.fanart}
+          title={cardFanartInfo2.title}
+          profilePic={cardFanartInfo2.profilePic}
+          profileName={cardFanartInfo2.profileName}
+        />
     </>
   )
 }
