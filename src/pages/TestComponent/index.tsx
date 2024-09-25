@@ -1,4 +1,4 @@
-import AtualizacaoListagem from '../../components/CardAtualizacao/AtualizacaoListagem';
+import AtualizacaoListagem from '../../components/CardAtualizacao';
 import styles from './index.module.scss';
 
 const TestComponent = () => {

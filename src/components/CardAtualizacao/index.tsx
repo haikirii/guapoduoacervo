@@ -1,9 +1,8 @@
 import styles from './index.module.scss';
-import '../../../styles/index.scss';
-import Capa from '../../../../public/temp/capa.jpg';
-import BotaoAtualizacao from '../BotaoAtualizacao';
-import CapaAtualizacao from '../CapaAtualizacao';
-import TituloAtualizacao from '../TituloAtualizacao';
+import Capa from '/temp/capa.jpg';
+import BotaoAtualizacao from './BotaoAtualizacao';
+import CapaAtualizacao from './CapaAtualizacao';
+import TituloAtualizacao from './TituloAtualizacao';
 
 interface AtualizacaoProps {
     tipoAtualizacao: string;
