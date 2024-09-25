@@ -12,15 +12,13 @@ interface AtualizacaoProps {
 const AtualizacaoListagem = ({tipoAtualizacao}: AtualizacaoProps) => {
     return  (
         <div className={styles.principal}>
-            <div className={styles.alinhaCapa}>
-                <CapaAtualizacao nomeImagem={Capa} altImagem="Capa the reason"/>
-            </div>
+            <CapaAtualizacao nomeImagem={Capa} altImagem="Capa the reason"/>
             <div className={styles.background}>
                 <div className={styles.alinhaConteudo}>
                     <TituloAtualizacao texto="The reason"/>
                     <p className={styles.atualizacao}>{tipoAtualizacao}</p>
                     <div className={styles.alinhaBotao}>
-                            <BotaoAtualizacao texto='Ler agora'/>
+                        <BotaoAtualizacao texto='Ler agora'/>
                     </div>
                 </div>
             </div>

@@ -5,8 +5,8 @@ interface TagProps {
     altImagem: string;
 }
 
-const CapaAtualizacao = ({nomeImagem}: TagProps, {altImagem}: TagProps) => {
-    return  <img src={nomeImagem} alt={altImagem} className={styles.imagem} />;
+const CapaAtualizacao = ({ nomeImagem, altImagem }: TagProps) => {
+    return <img src={nomeImagem} alt={altImagem} className={styles.imagem} />;
 }
 
 export default CapaAtualizacao;

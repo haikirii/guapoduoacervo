@@ -6,9 +6,7 @@ interface TituloProps {
 
 const TituloAtualizacao = ({texto}: TituloProps) => {
     return  (
-        <div className={styles.alinhaTitulo}>
-            <h3 className={styles.titulo}>{texto}</h3>
-        </div>
+        <h3 className={styles.titulo}>{texto}</h3>
     )
     ;
 }
