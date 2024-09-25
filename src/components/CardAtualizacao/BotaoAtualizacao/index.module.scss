@@ -1,0 +1,14 @@
+$cor-fundo: #ECDBB7;
+$cor-texto: #5F4B32;
+
+.botao{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: .75rem;
+    background: $cor-fundo;
+    padding: 0.7vw;
+    border-radius: 10px;
+    color: $cor-texto;
+    vertical-align: text-bottom;
+}

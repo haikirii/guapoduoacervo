@@ -1,9 +1,12 @@
+import AtualizacaoListagem from '../../components/CardAtualizacao/AtualizacaoListagem';
 import styles from './index.module.scss';
 
 const TestComponent = () => {
   return (
     <>
-      a
+      <div className={styles.fundo}>
+        <AtualizacaoListagem tipoAtualizacao='Nova capítulo!'/>
+      </div>
     </>
   )
 }
