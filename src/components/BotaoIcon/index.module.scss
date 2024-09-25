@@ -1,0 +1,22 @@
+.botao{
+    background: #ECDBB7;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+    margin: 5px;
+
+    &:hover{
+        cursor: pointer;
+    }
+    
+    .icon{
+        width: 20px;
+        height: 20px;
+        
+        &:hover{
+            fill: white;
+        }
+    }
+}
