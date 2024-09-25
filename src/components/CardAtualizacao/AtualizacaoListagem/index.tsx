@@ -17,8 +17,8 @@ const AtualizacaoListagem = ({tipoAtualizacao}: AtualizacaoProps) => {
             </div>
             <div className={styles.background}>
                 <div className={styles.alinhaConteudo}>
-                        <TituloAtualizacao texto="The reason"/>
-                        <p className={styles.atualizacao}>{tipoAtualizacao}</p>
+                    <TituloAtualizacao texto="The reason"/>
+                    <p className={styles.atualizacao}>{tipoAtualizacao}</p>
                     <div className={styles.alinhaBotao}>
                             <BotaoAtualizacao texto='Ler agora'/>
                     </div>

@@ -6,6 +6,11 @@ const TestComponent = () => {
     <>
       <div className={styles.fundo}>
         <AtualizacaoListagem tipoAtualizacao='Nova capítulo!'/>
+        <AtualizacaoListagem tipoAtualizacao='Nova capítulo!'/>
+        <AtualizacaoListagem tipoAtualizacao='Nova capítulo!'/>
+        <AtualizacaoListagem tipoAtualizacao='Nova capítulo!'/>
+        <AtualizacaoListagem tipoAtualizacao='Nova capítulo!'/>
+        <AtualizacaoListagem tipoAtualizacao='Nova capítulo!'/>
       </div>
     </>
   )
