@@ -6,8 +6,8 @@ interface SinopseProps {
 
 const SinopseFanfic = ({texto}: SinopseProps) => {
     return  (
-        <div className={styles.alinhaSinopse}>
-            <p className={styles.sinopseFonte}>{texto}</p>
+        <div className={styles.sinopse}>
+            <p className={styles.fonte}>{texto}</p>
         </div>
     );
 }

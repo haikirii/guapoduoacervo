@@ -1,23 +1,21 @@
-$cor-fundo: #5f4b3280;
-$cor-fundo-hover: #5F4B32;
+@import '../../../styles/index.scss';
 
 .tags{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-size: .75rem;
-    background: $cor-fundo;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    background: $hover-tag;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
     border-radius: 20px;
-    color: #fcfcfc;
-    margin: .18vw;
-    vertical-align: text-bottom;
+    color: $tertiary-color-serpia;
+    margin: 3px;
 }
 
 .tags:hover{
-    background-color: $cor-fundo-hover;
+    background-color: $text-color-serpia;
     cursor: pointer;
 }

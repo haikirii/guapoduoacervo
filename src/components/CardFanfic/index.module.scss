@@ -1,0 +1,44 @@
+@import "../../styles/index.scss";
+
+.principal{
+    display: flex;
+    align-items: end;
+
+    .capa{
+        margin-bottom: -4px;
+    }
+
+    .background{
+        background: $tertiary-color-serpia;
+        display: flex;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        align-items: center;
+        padding: 20px;
+        
+        .conteudo{
+            margin-right: 20px;
+
+            .tag{
+                padding-top: 15px;
+                text-align: end;
+            }
+            
+            .titulo{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .linha{
+                border-bottom: 2px solid $rosa;
+                margin-left: .6vw;
+                max-width: 85%;
+            }
+            
+            .info{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
