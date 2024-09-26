@@ -9,7 +9,8 @@ h4 {
 .logoAcima {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: $primary-color-serpia;
 }
 .footer {
     height: $footer-size;
