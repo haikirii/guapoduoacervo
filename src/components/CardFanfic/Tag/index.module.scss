@@ -13,9 +13,9 @@
     border-radius: 20px;
     color: $tertiary-color-serpia;
     margin: 3px;
-}
 
-.tags:hover{
-    background-color: $text-color-serpia;
-    cursor: pointer;
+    &:hover{
+        background-color: $text-color-serpia;
+        cursor: pointer;
+    }
 }

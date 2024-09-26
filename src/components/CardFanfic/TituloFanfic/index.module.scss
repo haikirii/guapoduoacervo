@@ -1,13 +1,15 @@
-.titulo{
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 1.6rem;
-    color: #5F4B32;
-}
+@import '../../../styles/index.scss';
 
-.alinhaTitulo{
-    padding-top: 1vh;
-    padding-left: 0.6vw;
+.alinhamento{
+    padding-top: 8px;
+    padding-left: 8px;
+
+    .titulo{
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 1.6rem;
+        color: $text-color-serpia
+    }    
 }

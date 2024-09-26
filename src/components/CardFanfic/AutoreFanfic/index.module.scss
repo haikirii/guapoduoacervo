@@ -1,12 +1,14 @@
-.nomeFonte{
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    color: #5F4B32;
-}
+@import '../../../styles/index.scss';
 
-.alinhaNome{
-    padding-top: 1vh;
-    padding-left: .6vw;
+.alinhamento{
+    padding-top: 7px;
+    padding-left: 8px;
+
+    .fonte{
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
+        color: $text-color-serpia;
+    }
 }

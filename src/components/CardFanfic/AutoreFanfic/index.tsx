@@ -6,8 +6,8 @@ interface AutoreProps {
 
 const AutoreFanfic = ({user}: AutoreProps) => {
     return  (
-        <div className={styles.alinhaNome}>
-            <p className={styles.nomeFonte}>por {user}</p>
+        <div className={styles.alinhamento}>
+            <p className={styles.fonte}>por {user}</p>
         </div>
     )
     ;
