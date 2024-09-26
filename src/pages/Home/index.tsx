@@ -7,6 +7,29 @@ const Home = () => {
     <>
       <Helmet> <title>Plantando Amarantos</title> </Helmet>
       <BannerHome />
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>último</div>
     </>
   )
 }
