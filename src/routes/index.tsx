@@ -3,6 +3,7 @@ import PageLayout from "../layouts/PageLayout";
 import NotFound from "../pages/NotFound";
 import Home from "../pages/Home";
 import TestComponent from "../pages/TestComponent";
+import Jigsaw from "../pages/Jigsaw";
 
 export const Paths = () => {
     return (
@@ -12,6 +13,7 @@ export const Paths = () => {
                     <Route path={'/'} element={<PageLayout />}>
                         <Route index element={<Home />} />
                         <Route path={'/t'} element={<TestComponent />}/>
+                        <Route path={'/jigsaw'} element={<Jigsaw/>}/>
                     </Route>
                     <Route path={'*'} element={<NotFound />} />
                 </Routes>
