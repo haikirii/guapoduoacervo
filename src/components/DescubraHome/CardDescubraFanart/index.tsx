@@ -1,4 +1,5 @@
 import styles from './index.module.scss';
+import BgFanartCard from '../../sharedComponents/BgFanartCard';
 
 interface CardFanart {
   linkFanart: string;
@@ -12,7 +13,9 @@ interface CardFanart {
 const CardDescubraFanart = (props: CardFanart) => {
   return (
     <a href={props.linkFanart} className={styles.card}>
-      <img src={props.img} alt={props.alt}/>
+      
+      <BgFanartCard img={props.img} alt={props.alt}/>
+
       <div className={styles.infoFanart}>
         <div className={styles.cardBelow}>
           <img src={props.profPic} alt={`foto de perfil de ${props.artist}`} />

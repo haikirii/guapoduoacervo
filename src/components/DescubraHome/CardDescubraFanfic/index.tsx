@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
-import SvgText from '../SvgText';
-import IsFinishedSvg from '../IsFinishedSvg';
+import SvgText from './SvgText';
+import IsFinishedSvg from './IsFinishedSvg';
+import BgFanartCard from '../../sharedComponents/BgFanartCard';
 
 interface CardFanfic {
   title: string;
@@ -11,13 +12,14 @@ interface CardFanfic {
   chaps: number;
   isFinished: boolean;
   linkFanfic: string;
+  sinopse: string;
 }
 
 // capa de fanart aqui teria alt?
 const CardDescubraFanfic = (props: CardFanfic) => {
   return (
     <a href={props.linkFanfic} className={styles.card}>
-      <img src={props.cover} alt={props.coverAlt} />
+      <BgFanartCard img={props.cover} alt={props.coverAlt}/>
       <div className={styles.infoFanfic}>
         <div className={styles.titulo}>
           {props.title}
@@ -38,6 +40,19 @@ const CardDescubraFanfic = (props: CardFanfic) => {
             isFinished={props.isFinished}
           />
         </div>
+      </div>
+      <div className={styles.infoSinopse}>
+        <div className={styles.creditosAbove}>
+          <div className={styles.titulo}>
+            {props.title}
+          </div>
+          <div className={styles.credits}>
+            por {props.author}
+          </div>
+        </div>
+        <p className={styles.sinopse}>
+          {props.sinopse}
+        </p>
       </div>
     </a>
   )

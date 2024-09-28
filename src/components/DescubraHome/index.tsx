@@ -11,6 +11,7 @@ interface FanficProps {
   chaps: number;
   isFinished: boolean;
   linkFanfic: string;
+  sinopse: string;
 }
 
 interface FanartProps {
@@ -27,33 +28,33 @@ interface FanartProps {
 type FanContentProps = FanficProps | FanartProps;
 
 const DescubraHome = (props: FanContentProps) => {
-      if(props.isFanfic) {
-        return (
-          <CardDescubraFanfic 
-            title={props.title}
-            cover={props.cover}
-            author={props.author}
-            words={props.words}
-            chaps={props.chaps}
-            isFinished={props.isFinished}
-            linkFanfic={props.linkFanfic}
-          />
-        )
-      }
-      
-      if(props.isFanart) {
-        return (
-          <CardDescubraFanart 
-            linkFanart={props.linkFanart}
-            img={props.img}
-            alt={props.alt}
-            title={props.title}
-            artist={props.artist}
-            profPic={props.profPic}
-          />
-        )
-      }
-      
+
+  return (
+    <>
+      {props.isFanfic ? (
+        <CardDescubraFanfic 
+          title={props.title}
+          cover={props.cover}
+          author={props.author}
+          words={props.words}
+          chaps={props.chaps}
+          isFinished={props.isFinished}
+          linkFanfic={props.linkFanfic}
+          sinopse={props.sinopse}
+        />
+      ) : (
+        <CardDescubraFanart 
+          linkFanart={props.linkFanart}
+          img={props.img}
+          alt={props.alt}
+          title={props.title}
+          artist={props.artist}
+          profPic={props.profPic}
+        />
+      )}
+    </>
+  )
+
 }
 
 export default DescubraHome;
