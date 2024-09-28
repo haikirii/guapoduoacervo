@@ -1,28 +1,2 @@
 @import '../../../styles/index.scss';
-
-// adicionar sombra no fundo ao hover
-
-.card {
-    margin: 5rem;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 220px;
-    height: 220px;
-    border-radius: 25px;
-    // animação de aumentar tamanho
-    transition: transform .2s;
-
-    &:hover {
-        transform: scale(1.1);
-        .infoFanfic {
-            opacity: 0;
-        }
-    }
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 25px;
-    }
-}
+@import '../sharedCard.scss';

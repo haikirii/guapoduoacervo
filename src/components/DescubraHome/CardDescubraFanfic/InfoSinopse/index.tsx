@@ -1,4 +1,5 @@
 import styles from './index.module.scss';
+import SinopseCenter from './SinopseCenter';
 
 interface InfoSinopseProps {
   title: string;
@@ -17,9 +18,9 @@ const InfoSinopse = (props: InfoSinopseProps) => {
           por {props.author}
         </div>
       </div>
-      <p className={styles.sinopse}>
-        {props.sinopse}
-      </p>
+      <SinopseCenter 
+        sinopse={props.sinopse}
+      />
     </div>
   )
 }

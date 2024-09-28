@@ -8,11 +8,12 @@ interface InfoFanficProps {
   words: number;
   chaps: number;
   isFinished: boolean;
+  isHovered: boolean;
 }
 
 const InfoFanfic = (props: InfoFanficProps) => {
   return (
-    <div className={styles.infoFanfic}>
+    <div className={`${styles.infoFanfic} ${props.isHovered ? styles.hovered : ''}`}>
         <div className={styles.titulo}>
           {props.title}
         </div>

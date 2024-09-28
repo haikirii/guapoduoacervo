@@ -3,7 +3,6 @@
 .infoFanfic {
     color: $text-color-serpia;
     border-radius: 25px;
-    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -14,6 +13,9 @@
     opacity: 1;
     transition: opacity .2s;
     display: flex;
+    &.hovered {
+        opacity: 0;
+    }
     .titulo {
         font-size: 2rem;
         font-weight: 900;

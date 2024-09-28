@@ -1,9 +1,8 @@
 import styles from './index.module.scss';
-import SvgText from './InfoFanfic/SvgText';
-import IsFinishedSvg from './InfoFanfic/IsFinishedSvg';
 import BgFanartCard from '../../sharedComponents/BgFanartCard';
 import InfoSinopse from './InfoSinopse';
 import InfoFanfic from './InfoFanfic';
+import { useState } from 'react';
 
 interface CardFanfic {
   title: string;
@@ -18,8 +17,14 @@ interface CardFanfic {
 }
 
 const CardDescubraFanfic = (props: CardFanfic) => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <a href={props.linkFanfic} className={styles.card}>
+    <a href={props.linkFanfic} className={styles.card}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
       <BgFanartCard img={props.cover} alt={props.coverAlt}/>
       <InfoFanfic 
         title={props.title}
@@ -27,6 +32,7 @@ const CardDescubraFanfic = (props: CardFanfic) => {
         words={props.words}
         chaps={props.chaps}
         isFinished={props.isFinished}
+        isHovered={isHovered}
       />
       <InfoSinopse 
         title={props.title}

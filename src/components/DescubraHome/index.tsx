@@ -1,6 +1,6 @@
-import styles from './index.module.scss';
 import CardDescubraFanfic from './CardDescubraFanfic';
 import CardDescubraFanart from './CardDescubraFanart';
+
 interface FanficProps {
   isFanfic: true;
   isFanart?: false;
