@@ -1,20 +1,27 @@
 @import '../../../styles/index.scss';
 
+// mds que bagunça ta isso daqui
+
 .card {
-    margin: 2rem;
+    margin: 5rem;
     display: flex;
     justify-content: center;
     position: relative;
     width: 220px;
     height: 220px;
     border-radius: 25px;
-    transition: transform .2s;
+    // animação de aumentar tamanho
+    transition: transform 0.2s;
+    
     &:hover {
         transform: scale(1.1);
         .infoFanart {
-            display: flex;
+            .cardBelow {
+                opacity: 1;
+            }
         }
     }
+
     img {
         width: 100%;
         height: 100%;
@@ -35,6 +42,10 @@
             display: flex;
             align-items: center;
             padding: 10px;
+            opacity: 0;
+            // animação fade do card abaixo
+            transition: opacity .2s ease-in-out;
+            border-radius: 0 0 24px 24px;
             img {
                 width: 35px;
                 height: 35px;

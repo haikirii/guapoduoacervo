@@ -8,27 +8,27 @@ import cover from '/temp/capa.jpg'
 
 const TestComponent = () => {
   return (
-    <>
+    <main className={styles.main}>
       <DescubraHome 
-        isFanart={true}
-        linkFanart='/t'
-        img={fanart}
-        alt={'teste alt'}
-        title={'Título da arte'}
-        artist={'Aloy'}
-        profPic={profilePic}
-      />
-      <DescubraHome 
-        isFanfic={true} 
-        title={'Sacramento'}
-        cover={cover}
-        author={'Nan'}
-        words={1000000}
-        chaps={10}
-        isFinished={true}
-        linkFanfic='/t'
-      />
-    </>
+          isFanart={true}
+          linkFanart='/t'
+          img={fanart}
+          alt={'teste alt'}
+          title={'Título da arte'}
+          artist={'Aloy'}
+          profPic={profilePic}
+        />
+        <DescubraHome 
+          isFanfic={true} 
+          title={'Sacramento'}
+          cover={cover}
+          author={'Nan'}
+          words={1000000}
+          chaps={10}
+          isFinished={true}
+          linkFanfic='/t'
+        />
+    </main>
   )
 }
 
