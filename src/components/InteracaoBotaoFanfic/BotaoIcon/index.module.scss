@@ -1,4 +1,4 @@
-@import '../../styles/index.scss';
+@import '../../../styles/index.scss';
 
 .botao{
     background: #ECDBB7;
@@ -17,6 +17,8 @@
     
     .icone{
         font-size: 20px;
+    }
+    &:before{
         color: $text-color-serpia;
     }
 }

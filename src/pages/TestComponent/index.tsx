@@ -1,17 +1,13 @@
-import BotaoIcon from '../../components/BotaoIcon';
-import styles from './index.module.scss';
 import '../../styles/icons/style.css';
+import styles from './index.module.scss';
+import InteracaoBotaoFanfic from '../../components/InteracaoBotaoFanfic';
+import BotaoIcon from '../../components/InteracaoBotaoFanfic/BotaoIcon';
 
 const TestComponent = () => {
   return (
-    <>
-      <div className={styles.fundo}>
-        <BotaoIcon icon='ol-heart'/>
-        <BotaoIcon icon='ol-library'/>
-        <BotaoIcon icon='ol-bookmark'/>
-        <BotaoIcon icon='ol-act-notification'/>
-      </div>
-    </>
+    <div className={styles.fundo}>
+     <InteracaoBotaoFanfic/>
+    </div>
   )
 }
 
