@@ -1,4 +1,4 @@
-import '../../../styles/index.scss'
+import styles from './index.module.scss';
 
 interface bgFanart {
   img: string;
@@ -6,7 +6,7 @@ interface bgFanart {
 }
 
 const BgFanartCard = (props: bgFanart) => {
-  return <img src={props.img} alt={props.alt} className='img-bg-card'/>
+  return <img src={props.img} alt={props.alt} className={styles.imgBgCard}/>
 }
 
 export default BgFanartCard;

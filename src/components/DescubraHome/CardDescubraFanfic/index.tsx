@@ -1,7 +1,9 @@
 import styles from './index.module.scss';
-import SvgText from './SvgText';
-import IsFinishedSvg from './IsFinishedSvg';
+import SvgText from './InfoFanfic/SvgText';
+import IsFinishedSvg from './InfoFanfic/IsFinishedSvg';
 import BgFanartCard from '../../sharedComponents/BgFanartCard';
+import InfoSinopse from './InfoSinopse';
+import InfoFanfic from './InfoFanfic';
 
 interface CardFanfic {
   title: string;
@@ -15,45 +17,22 @@ interface CardFanfic {
   sinopse: string;
 }
 
-// capa de fanart aqui teria alt?
 const CardDescubraFanfic = (props: CardFanfic) => {
   return (
     <a href={props.linkFanfic} className={styles.card}>
       <BgFanartCard img={props.cover} alt={props.coverAlt}/>
-      <div className={styles.infoFanfic}>
-        <div className={styles.titulo}>
-          {props.title}
-        </div>
-        <div className={styles.credits}>
-          por {props.author}
-        </div>
-        <div className={styles.divIcones}>
-          <SvgText 
-            isWords={true}
-            words={props.words}
-          />
-          <SvgText 
-            isChaps={true}
-            chaps={props.chaps}
-          />
-          <IsFinishedSvg 
-            isFinished={props.isFinished}
-          />
-        </div>
-      </div>
-      <div className={styles.infoSinopse}>
-        <div className={styles.creditosAbove}>
-          <div className={styles.titulo}>
-            {props.title}
-          </div>
-          <div className={styles.credits}>
-            por {props.author}
-          </div>
-        </div>
-        <p className={styles.sinopse}>
-          {props.sinopse}
-        </p>
-      </div>
+      <InfoFanfic 
+        title={props.title}
+        author={props.author}
+        words={props.words}
+        chaps={props.chaps}
+        isFinished={props.isFinished}
+      />
+      <InfoSinopse 
+        title={props.title}
+        author={props.author}
+        sinopse={props.sinopse}
+      />
     </a>
   )
 }

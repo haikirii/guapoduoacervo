@@ -1,5 +1,7 @@
 import styles from './index.module.scss';
 import BgFanartCard from '../../sharedComponents/BgFanartCard';
+import CardFanartBelow from './CardFanartBelow';
+import { useState } from 'react';
 
 interface CardFanart {
   linkFanart: string;
@@ -11,21 +13,22 @@ interface CardFanart {
 }
 
 const CardDescubraFanart = (props: CardFanart) => {
+  const [isHovered, setIsHovered] = useState(false);
+  
   return (
-    <a href={props.linkFanart} className={styles.card}>
+    <a href={props.linkFanart} className={styles.card}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
       
       <BgFanartCard img={props.img} alt={props.alt}/>
-
       <div className={styles.infoFanart}>
-        <div className={styles.cardBelow}>
-          <img src={props.profPic} alt={`foto de perfil de ${props.artist}`} />
-          <div className={styles.text}>
-            <div className={styles.title}>
-                {props.title}
-            </div>
-            <span className={styles.creditosArtista}>por {props.artist}</span>
-          </div>
-        </div>
+        <CardFanartBelow
+          title={props.title}
+          artist={props.artist}
+          profPic={props.profPic}
+          isHovered={isHovered}
+        />
       </div>
     </a>
   )
