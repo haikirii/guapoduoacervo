@@ -1,7 +1,7 @@
 .card {
+    margin: 2rem;
     display: flex;
     justify-content: center;
-    background: red;
     width: 220px;
     height: 220px;
     border-radius: 25px;
@@ -20,6 +20,7 @@
         border-radius: 25px;
     }
     .infoFanfic {
+        border-radius: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -1,7 +1,6 @@
 import styles from './index.module.scss';
 import CardDescubraFanfic from './CardDescubraFanfic';
 import CardDescubraFanart from './CardDescubraFanart';
-
 interface FanficProps {
   isFanfic: true;
   isFanart?: false;
@@ -20,6 +19,9 @@ interface FanartProps {
   linkFanart: string;
   img: string;
   alt?: string;
+  title: string;
+  artist: string;
+  profPic: string;
 }
 
 type FanContentProps = FanficProps | FanartProps;
@@ -45,6 +47,9 @@ const DescubraHome = (props: FanContentProps) => {
             linkFanart={props.linkFanart}
             img={props.img}
             alt={props.alt}
+            title={props.title}
+            artist={props.artist}
+            profPic={props.profPic}
           />
         )
       }

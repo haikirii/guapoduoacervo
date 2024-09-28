@@ -2,6 +2,8 @@ import styles from './index.module.scss';
 import DescubraHome from '../../components/DescubraHome';
 
 import fanart from '/temp/fanart-ren1.png'
+import profilePic from '/image/about/Aloy-pfp.jpg';
+
 import cover from '/temp/capa.jpg'
 
 const TestComponent = () => {
@@ -12,6 +14,9 @@ const TestComponent = () => {
         linkFanart='/t'
         img={fanart}
         alt={'teste alt'}
+        title={'Título da arte'}
+        artist={'Aloy'}
+        profPic={profilePic}
       />
       <DescubraHome 
         isFanfic={true} 
