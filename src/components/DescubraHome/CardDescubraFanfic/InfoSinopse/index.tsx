@@ -1,3 +1,4 @@
+import CreditosAbove from './CreditosAbove';
 import styles from './index.module.scss';
 import SinopseCenter from './SinopseCenter';
 
@@ -10,14 +11,10 @@ interface InfoSinopseProps {
 const InfoSinopse = (props: InfoSinopseProps) => {
   return (
     <div className={styles.infoSinopse}>
-      <div className={styles.creditosAbove}>
-        <div className={styles.titulo}>
-          {props.title}
-        </div>
-        <div className={styles.credits}>
-          por {props.author}
-        </div>
-      </div>
+      <CreditosAbove
+        title={props.title}
+        author={props.author}
+      />
       <SinopseCenter 
         sinopse={props.sinopse}
       />
