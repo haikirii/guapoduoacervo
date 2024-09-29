@@ -1,13 +1,13 @@
 import styles from './index.module.scss';
 
 interface SinopseProps {
-    texto: string;
+    sinopse: string;
 }
 
-const SinopseFanfic = ({texto}: SinopseProps) => {
+const SinopseFanfic = ({sinopse}: SinopseProps) => {
     return  (
         <div className={styles.sinopse}>
-            <p className={styles.fonte}>{texto}</p>
+            <p className={styles.fonte}>{sinopse}</p>
         </div>
     );
 }

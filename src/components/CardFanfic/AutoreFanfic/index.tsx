@@ -1,13 +1,10 @@
 import styles from './index.module.scss';
+import { CardFanficLinkType } from '../../../types/CardFanficLinkType';
 
-interface AutoreProps {
-    user: string;
-}
-
-const AutoreFanfic = ({user}: AutoreProps) => {
+const AutoreFanfic = (props: CardFanficLinkType) => {
     return  (
         <div className={styles.alinhamento}>
-            <p className={styles.fonte}>por {user}</p>
+           <a href={props.link}> <p className={styles.fonte}>por {props.texto}</p></a>
         </div>
     )
     ;

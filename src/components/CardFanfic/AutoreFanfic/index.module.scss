@@ -3,12 +3,16 @@
 .alinhamento{
     padding-top: 7px;
     padding-left: 8px;
-
+    display: flex;
     .fonte{
         font-family: "Figtree", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: italic;
         color: $text-color-serpia;
+    } 
+
+    &:hover{
+        text-decoration: underline;
     }
 }

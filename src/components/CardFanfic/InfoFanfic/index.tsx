@@ -1,16 +1,15 @@
 import styles from './index.module.scss';
-import IconInfo from '../IconInfo';
 
 interface InfoProps {
-    imagem: string;
-    info: string;
-    altIcon: string;
+    icon: string;
+    infoString?: string;
+    infoNumber?: number;
 }
 
-const InfoFanfic = ({imagem, info, altIcon}: InfoProps) => {
+const InfoFanfic = ({icon, infoString, infoNumber}: InfoProps) => {
     return  (
         <div className={styles.alinhamento}>
-            <IconInfo nomeImagem={imagem} altIcon={altIcon}/><p className={styles.fonte}>{info}</p>
+            <i className={icon}/><p className={styles.fonte}>{infoString ?  infoString : infoNumber}</p>
         </div>
     );
 }

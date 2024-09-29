@@ -1,12 +1,8 @@
 import styles from './index.module.scss';
+import { ImagemProps } from '../../../types/ImagemType';
 
-interface TagProps {
-    nomeImagem: string;
-    altImagem: string;
-}
-
-const CapaAtualizacao = ({nomeImagem}: TagProps, {altImagem}: TagProps) => {
-    return  <img src={nomeImagem} alt={altImagem} className={styles.imagem} />;
+const CapaAtualizacao = (props: ImagemProps) => {
+    return  <img src={props.nomeImagem} alt={props.altImagem} className={styles.imagem} />;
 }
 
 export default CapaAtualizacao;

@@ -1,14 +1,24 @@
+@import '../../../styles/index.scss';
+
 $cor-fundo: #ECDBB7;
-$cor-texto: #5F4B32;
 
 .botao{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
+    // font-weight: 400;
+    // font-size: .75rem;
     font-weight: 400;
-    font-size: .75rem;
+    font-size: 1rem;
     background: $cor-fundo;
-    padding: 0.7vw;
-    border-radius: 10px;
-    color: $cor-texto;
+    padding-inline: 12px;
+    padding-block: 7px;
+    border-radius: 12px;
+    color: $text-color-serpia;
     vertical-align: text-bottom;
+    cursor: pointer;
+
+    .a{
+        text-decoration: none;
+        color: $text-color-serpia;
+    }
 }
