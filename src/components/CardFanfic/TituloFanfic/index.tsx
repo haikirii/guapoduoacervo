@@ -6,7 +6,7 @@ interface TituloProps {
 
 const TituloFanfic = ({texto}: TituloProps) => {
     return  (
-        <div className={styles.alinhamentotitulo}>
+        <div className={styles.alinhaTitulo}>
             <h3 className={styles.titulo}>{texto}</h3>
         </div>
     )
