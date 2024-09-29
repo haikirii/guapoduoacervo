@@ -1,13 +1,8 @@
 import styles from './index.module.scss';
 
-interface CardFanartBelowProps {
-  profPic: string;
-  artist: string;
-  title: string;
-  isHovered: boolean;
-}
+import { CardFanartProps } from '../../../../types/cardFanartType';
 
-const CardFanartBelow = (props: CardFanartBelowProps) => {
+const CardFanartBelow = (props: CardFanartProps) => {
   return (
     <div className={`${styles.cardBelow} ${props.isHovered ? styles.hovered : ''}`}>
       <img src={props.profPic} alt={`foto de perfil de ${props.artist}`} />

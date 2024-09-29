@@ -4,19 +4,9 @@ import InfoSinopse from './InfoSinopse';
 import InfoFanfic from './InfoFanfic';
 import { useState } from 'react';
 
-interface CardFanfic {
-  title: string;
-  cover: string;
-  coverAlt?: string;
-  author: string;
-  words: number;
-  chaps: number;
-  isFinished: boolean;
-  linkFanfic: string;
-  sinopse: string;
-}
+import { CardFanficProps } from '../../../types/cardFanficType';
 
-const CardDescubraFanfic = (props: CardFanfic) => {
+const CardDescubraFanfic = (props: CardFanficProps) => {
 
   const [isHovered, setIsHovered] = useState(false);
 

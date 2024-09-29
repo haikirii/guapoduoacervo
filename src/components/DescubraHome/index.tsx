@@ -1,31 +1,7 @@
 import CardDescubraFanfic from './CardDescubraFanfic';
 import CardDescubraFanart from './CardDescubraFanart';
 
-interface FanficProps {
-  isFanfic: true;
-  isFanart?: false;
-  title: string;
-  cover: string;
-  author: string;
-  words: number;
-  chaps: number;
-  isFinished: boolean;
-  linkFanfic: string;
-  sinopse: string;
-}
-
-interface FanartProps {
-  isFanfic?: false;
-  isFanart: true;
-  linkFanart: string;
-  img: string;
-  alt?: string;
-  title: string;
-  artist: string;
-  profPic: string;
-}
-
-type FanContentProps = FanficProps | FanartProps;
+import { FanContentProps } from '../../types/FanContentType';
 
 const DescubraHome = (props: FanContentProps) => {
 

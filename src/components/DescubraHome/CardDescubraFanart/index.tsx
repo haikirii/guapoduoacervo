@@ -3,16 +3,9 @@ import BgFanartCard from '../../sharedComponents/BgFanartCard';
 import CardFanartBelow from './CardFanartBelow';
 import { useState } from 'react';
 
-interface CardFanart {
-  linkFanart: string;
-  img: string;
-  alt?: string;
-  title: string;
-  artist: string;
-  profPic: string;
-}
+import { CardFanartProps } from '../../../types/cardFanartType';
 
-const CardDescubraFanart = (props: CardFanart) => {
+const CardDescubraFanart = (props: CardFanartProps) => {
   const [isHovered, setIsHovered] = useState(false);
   
   return (
@@ -27,8 +20,7 @@ const CardDescubraFanart = (props: CardFanart) => {
           title={props.title}
           artist={props.artist}
           profPic={props.profPic}
-          isHovered={isHovered}
-        />
+          isHovered={isHovered} img={''}        />
       </div>
     </a>
   )
