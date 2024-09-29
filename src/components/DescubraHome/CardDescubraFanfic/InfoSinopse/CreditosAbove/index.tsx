@@ -1,11 +1,8 @@
 import styles from './index.module.scss';
 
-interface CreditosAboveProps {
-  title: string;
-  author: string;
-}
+import { CardFanficProps } from '../../../../../types/cardFanficType';
 
-const CreditosAbove = (props: CreditosAboveProps) => {
+const CreditosAbove = (props: CardFanficProps) => {
   return (
     <div className={styles.creditosAbove}>
     <div className={styles.titulo}>

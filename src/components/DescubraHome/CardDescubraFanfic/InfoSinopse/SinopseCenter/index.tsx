@@ -1,10 +1,8 @@
 import styles from './index.module.scss';
 
-interface SinopseProps {
-  sinopse: string;
-}
+import { CardFanficProps } from '../../../../../types/cardFanficType';
 
-const SinopseCenter = (props: SinopseProps) => {
+const SinopseCenter = (props: CardFanficProps) => {
   return (
     <p className={styles.sinopse}>
       {props.sinopse}
