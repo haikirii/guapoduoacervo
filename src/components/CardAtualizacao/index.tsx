@@ -6,7 +6,7 @@ import TituloAtualizacao from './TituloAtualizacao';
 
 import { CardAtualizacaoProps } from '../../types/CardAtualizacaoType';
 
-const AtualizacaoListagem = (props: CardAtualizacaoProps) => {
+const CardAtualizacao = (props: CardAtualizacaoProps) => {
     return  (
         <div className={styles.principal}>
             <CapaAtualizacao nomeImagem={props.pathCapa} altImagem={props.altCapa ? props.altCapa : `Capa de ${props.titulo}`}/>
@@ -23,4 +23,4 @@ const AtualizacaoListagem = (props: CardAtualizacaoProps) => {
     );
 }
 
-export default AtualizacaoListagem;
+export default CardAtualizacao;
