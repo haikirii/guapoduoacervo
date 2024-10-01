@@ -1,0 +1,36 @@
+@import '../../../../styles/index.scss';
+
+.cardBelow {
+    background-image: linear-gradient(#ffffff00, #ffffffc5, #fff);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    // animação fade do card abaixo
+    transition: opacity .2s ease-in-out;
+    border-radius: 0 0 24px 24px;
+    &.hovered {
+        opacity: 1;
+    }
+    img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 100%;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+            font-size: .9rem;
+            color: $text-color-serpia;
+        }
+        .creditosArtista {
+            font-size: .7rem;
+            color: $text-color-serpia;
+        }
+    }
+}

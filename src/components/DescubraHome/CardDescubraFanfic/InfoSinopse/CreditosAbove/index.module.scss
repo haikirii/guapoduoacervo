@@ -1,0 +1,15 @@
+@import '../../../../../styles/index.scss';
+
+.creditosAbove {
+    color: $text-color-serpia;
+    .titulo {
+        font-size: 1.6rem;
+        font-weight: 900;
+        margin-top: 20px;
+    }
+    .credits {
+        margin-top: 2px;
+        font-weight: 500;
+        font-size: .7rem;
+    }
+}

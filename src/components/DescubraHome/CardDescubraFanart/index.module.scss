@@ -1,0 +1,15 @@
+@import '../../../styles/index.scss';
+@import '../sharedCard.scss';
+
+.card {
+    .infoFanart {
+        color: $text-color-serpia;
+        border-radius: 25px;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        
+    }
+}
