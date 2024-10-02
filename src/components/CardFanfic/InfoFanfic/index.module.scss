@@ -1,17 +1,21 @@
-.infoFonte{
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: .9rem;
-    color: #5F4B32;
-}
+@import '../../../styles/index.scss';
 
-.alinhaInfo{
-    padding-top: 1vh;
-    padding-left: .6vw;
+.alinhamento{
+    padding-top: 7px;
+    padding-left: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .8vw;
+    gap: 10px;
+
+    .fonte{
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
+        font-size: .9rem;
+        color: $text-color-serpia;
+    }
+    
+    
 }
