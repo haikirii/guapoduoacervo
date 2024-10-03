@@ -15,7 +15,7 @@ const CardAtualizacao = (props: CardAtualizacaoProps) => {
                     <TituloAtualizacao texto={props.titulo}/>
                     <p className={styles.atualizacao}>{props.novoCap ? "Novo capítulo!" : "Lançamento!"}</p>
                     <div className={styles.alinhaBotao}>
-                        <BotaoAtualizacao texto='Ler agora' linkFanfic={props.linkFanfic}/>
+                        <BotaoAtualizacao texto='Ler agora' link={props.linkFanfic}/>
                     </div>
                 </div>
             </div>
