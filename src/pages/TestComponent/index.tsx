@@ -1,10 +1,11 @@
+import BotaoTexto from '../../components/BotaoTexto';
 import styles from './index.module.scss';
 
 const TestComponent = () => {
   return (
-    <>
-      a
-    </>
+    <div className={styles.fundo}>
+      <BotaoTexto/>
+    </div>
   )
 }
 
