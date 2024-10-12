@@ -1,9 +1,17 @@
 import styles from './index.module.scss';
 import { BotaoTextoProps } from '../../../types/BotaoTextoType';
 import '../../../styles/icon/style.css';
+import { Link } from 'react-router-dom';
 
 const BotaoDourado = (props: BotaoTextoProps) => {
-  return <a href={props.link}><button className={styles.botao}>{props.texto}<i className={props.icon}/></button></a>;
+  return( 
+  <Link to={props.link}>
+    <div className={styles.botao}>
+      <p className={styles.texto}>{props.texto}</p>
+      <i className={props.icon}/>
+    </div>
+  </Link>
+  );
 }
 
 export default BotaoDourado;

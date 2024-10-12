@@ -6,10 +6,10 @@ import BotaoDourado from './BotaoDourado';
 const BotaoTexto = () => {
   return (
       <div className={styles.principal}>
-          <BotaoDropdown texto={'Disponível em'} icon={'ol-chevron-down'} link={'asdasdasd'} />
+          <BotaoDropdown texto={'Disponível em'} icon={'ol-chevron-down'}/>
           <div className={styles.direita}>
             <BotaoOutline texto={'Recomeçar'} icon={'ol-chevron-up'} link={'gsfdgsvc'}/>
-            <BotaoDourado texto={'Continuar'} icon={'ol-chevron-forward'} link={'qkwjedkqw'}/>
+            <BotaoDourado texto={'Continue a leitura'} icon={'ol-chevron-forward'} link={'qkwjedkqw'}/>
           </div>
       </div>
   );
