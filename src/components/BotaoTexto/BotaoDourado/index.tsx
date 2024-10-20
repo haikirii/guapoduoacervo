@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const BotaoDourado = (props: BotaoTextoProps) => {
   return( 
-  <Link to={props.link}>
+  <Link to={`${props.link}`}>
     <div className={styles.botao}>
       <p className={styles.texto}>{props.texto}</p>
-      <i className={props.icon}/>
+      <i className={`${props.icon} ${styles.icon}`}/>
     </div>
   </Link>
   );

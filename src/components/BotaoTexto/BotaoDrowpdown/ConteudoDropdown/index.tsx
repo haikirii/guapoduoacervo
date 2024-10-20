@@ -1,13 +1,14 @@
 import styles from './index.module.scss';
 import { BotaoTextoProps } from '../../../../types/BotaoTextoType';
 import { Link } from 'react-router-dom';
+import '../../../../styles/logo/style.css';
 
 const ConteudoDropdown = (props: BotaoTextoProps) => {
 
   return( 
     <Link to={`${props.link}`}>
       <div className={`${styles.conteudo} ${props.open ? styles.active : null}`}>
-        <img src={props.icon} className={styles.icon}/>
+        <i className={`${props.icon} ${styles.icon}`}/>
         <p className={styles.texto}>{props.texto}</p>
       </div>
     </Link>
