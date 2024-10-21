@@ -1,0 +1,14 @@
+.principal{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px;
+
+    .disable{
+        pointer-events: none;
+    }
+
+    .link{
+        color: #000;
+    }
+}
