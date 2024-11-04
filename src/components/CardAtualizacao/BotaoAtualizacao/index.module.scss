@@ -1,0 +1,19 @@
+@import '../../../styles/index.scss';
+
+$cor-fundo: #ECDBB7;
+
+.botao{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    // font-weight: 400;
+    // font-size: .75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: $cor-fundo;
+    padding-inline: 12px;
+    padding-block: 7px;
+    border-radius: 12px;
+    color: $text-color-serpia;
+    vertical-align: text-bottom;
+    cursor: pointer;
+}

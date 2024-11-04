@@ -3,7 +3,9 @@ import styles from './index.module.scss';
 const TestComponent = () => {
   return (
     <>
-      a
+      <div className={styles.fundo}>
+        
+      </div>
     </>
   )
 }
