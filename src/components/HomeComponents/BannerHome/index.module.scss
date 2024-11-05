@@ -10,7 +10,7 @@
     
     &::before {
         content: '';
-        position: fixed;
+        position: absolute;
         top: $header-size;
         left: 0;
         right: 0;

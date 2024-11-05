@@ -1,4 +1,6 @@
+import Creditos from '../../components/Creditos';
 import styles from './index.module.scss';
+import icon from '/temp/valky.jpg';
 
 import CardFanart from '../../components/HomeComponents/CardFanart/index.';
 

@@ -5,9 +5,12 @@ import espImg from '/image/components/languages/esp.png'
 import engImg from '/image/components/languages/eng.png'
 import styles from "./index.module.scss";
 
-import BotaoMudarIdioma from '../BotaoMudarIdioma';
-import FooterLinks from '../FooterLinks';
-import { Item } from '../FooterLinks';
+import BotaoMudarIdioma from './BotaoMudarIdioma';
+import FooterLinks from './FooterLinks';
+import FooterLogo from './FooterLogo';
+import { Item } from './FooterLinks';
+
+import FooterLogoImg from '/image/components/Logo-footer.png';
 
 const svgIconProv = (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
@@ -46,6 +49,10 @@ const Footer = () => {
     ];
 
     return(
+        <>
+        <div className={styles.logoAcima}>
+            <FooterLogo src={FooterLogoImg} alt={'Logo com duas alianças e um ornamento em baixo, uma aliança com um quebra cabeça e outro com uma aranha'} />
+        </div>
         <footer className={`${styles.footer} ${styles[theme]}`}>
             <div className={`${styles.container} wrapper`}>
                 <div className={``}>
@@ -84,6 +91,7 @@ const Footer = () => {
                 <span>Acervo Amarando © 2024</span>
             </div>
         </footer>
+        </>
     );
 }
 
