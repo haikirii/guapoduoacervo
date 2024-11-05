@@ -27,8 +27,13 @@ const CardDescubraFanfic = (props: CardFanficProps) => {
       <InfoSinopse 
         title={props.title}
         author={props.author}
-        sinopse={props.sinopse}
-      />
+        sinopse={props.sinopse} 
+        cover={props.cover} 
+        words={props.words} 
+        chaps={props.chaps} 
+        isFinished={props.isFinished} 
+        linkFanfic={props.linkFanfic}
+        />
     </a>
   )
 }
