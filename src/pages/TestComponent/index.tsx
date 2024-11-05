@@ -1,14 +1,35 @@
 import Creditos from '../../components/Creditos';
 import styles from './index.module.scss';
-import icon from '/temp/valky.jpg';
+import DescubraHome from '../../components/DescubraHome';
+
+import profPic from '/image/about/Ren-pfp.png'
+import fanart from '/temp/fanart-ren1.png'
+import cover from '/temp/capa.jpg'
 
 const TestComponent = () => {
   return (
-    <div className={styles.fundo}>
-      <Creditos funcao={'REVISÃO'} user={'Valky'} icon={icon}/>
-      <Creditos funcao={'TRADUÇÃO'} user={'Jae'} icon={icon} link='jaepagina'/>
-      <Creditos funcao={'ARTE DE CAPA'} user={'Ratinha'} icon={icon} link='linkprotwitter'/>
-    </div>
+    <main className={styles.main}>
+      <DescubraHome 
+        isFanart={true}
+        linkFanart='/t'
+        img={fanart}
+        alt={'teste alt'}
+        title={'guapoduo meus pais'}
+        artist={'ren'}
+        profPic={profPic}
+      />
+      <DescubraHome 
+        isFanfic={true} 
+        title={'Sacramento'}
+        cover={cover}
+        author={'Nan'}
+        words={1000000}
+        chaps={10}
+        isFinished={true}
+        linkFanfic='/t'
+        sinopse='Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ipsa alias blanditiis aliquid? Aut, rerum. A minus dolorem nesciunt animi dolor, magnam illum quam blanditiis, quas deserunt doloremque id?'
+      />
+    </main>
   )
 }
 
