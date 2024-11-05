@@ -1,0 +1,14 @@
+@import '../../../../../styles/index.scss';
+
+.sinopse {
+    color: $text-color-serpia;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

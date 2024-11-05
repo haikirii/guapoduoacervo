@@ -1,0 +1,67 @@
+@import '../../../styles/index.scss';
+
+.card {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    position: relative;
+    color: $text-color-serpia;
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    &:hover {
+        .cardHover {
+            display: flex;
+        }
+    }
+    .cardHover {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background: rgb(255, 255, 255, 0.6);
+        border-radius: 25px;
+        .svgBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80%;
+            padding-top: 20%;
+            svg {
+                /* nao entendi pq isso nao centraliza sozinho */
+                margin-left: -.4rem;
+                width: 3rem;
+            }
+        }
+        .cardCreditos {
+            display: flex;
+            width: 100%;
+            height: 20%;
+            img {  
+                padding: 10px;
+                border-radius: 100%;
+                width: auto;
+                height: 100%;
+            }
+            .cardCreditosText {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .cardTitulo {
+                    font-size: 1.2rem;
+                }
+                .cardCreditoNome {
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
