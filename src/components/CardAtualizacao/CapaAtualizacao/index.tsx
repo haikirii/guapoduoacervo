@@ -1,4 +1,5 @@
 import styles from './index.module.scss';
+
 import { ImagemProps } from '../../../types/ImagemType';
 
 const CapaAtualizacao = (props: ImagemProps) => {

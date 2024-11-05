@@ -4,6 +4,7 @@ import BotaoAtualizacao from './BotaoAtualizacao';
 import CapaAtualizacao from './CapaAtualizacao';
 import TituloAtualizacao from './TituloAtualizacao';
 
+
 import { CardAtualizacaoProps } from '../../types/CardAtualizacaoType';
 
 const CardAtualizacao = (props: CardAtualizacaoProps) => {
