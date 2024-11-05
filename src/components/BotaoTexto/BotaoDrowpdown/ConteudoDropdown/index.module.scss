@@ -1,0 +1,35 @@
+@import '../../../../styles/index.scss';
+
+.conteudo{
+    width:230px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: #ECDBB7;
+    color: $text-color-serpia;
+    border-radius: 12px;
+    max-height: 40vh;
+    visibility: hidden;
+    gap: 15px;
+
+    &:hover{
+        background-color: $text-color-serpia;
+        color: $tertiary-color-serpia;
+    }
+
+    .icon{
+        font-size: 1.3rem;
+    }
+    
+    &:before{    
+        font-family: "Figtree", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        color: $text-color-serpia;
+    }
+}
+
+.active{
+    visibility: visible;
+}
