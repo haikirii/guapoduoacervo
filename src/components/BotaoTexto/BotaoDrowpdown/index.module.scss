@@ -1,0 +1,41 @@
+@import '../../../styles/index.scss';
+
+.principal{
+    position: relative;
+
+    .conteudo{
+        position: absolute;
+        background-color: #ECDBB7;
+        border-radius: 12px;
+        margin-top: 7px;
+        visibility: hidden;
+    }
+
+    .active{
+        visibility: visible;
+    }
+    
+    .botao{
+        display: flex;
+        align-items: center;
+        padding: 8px 10px;
+        border: 1px solid #ECDBB7;
+        background-color: #ECDBB7;
+        border-radius: 12px;
+        cursor: pointer;
+        gap: 5px;
+        color: $text-color-serpia;
+        
+        .texto{    
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        }
+
+        .icon{
+            font-size: 1.1rem;
+        }
+    }
+}

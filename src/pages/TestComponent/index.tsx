@@ -1,3 +1,4 @@
+import Creditos from '../../components/Creditos';
 import styles from './index.module.scss';
 import DescubraHome from '../../components/DescubraHome';
 
