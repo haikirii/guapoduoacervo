@@ -1,0 +1,9 @@
+.svgNumber {
+    display: flex;
+    align-items: center;
+    svg {
+        margin-inline: .15rem;
+        width: 15px;
+        height: 15px;
+    }
+}
