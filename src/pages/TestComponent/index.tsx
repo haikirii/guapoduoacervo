@@ -1,17 +1,13 @@
-
-import BotaoTexto from '../../components/BotaoTexto';
+import Creditos from '../../components/Creditos';
 import styles from './index.module.scss';
-import InteracaoBotaoFanfic from '../../components/InteracaoBotaoFanfic';
-import AtualizacaoListagem from '../../components/CardAtualizacao';
-import Capa from '/temp/capa.jpg'
-import CardFanfic from '../../components/CardFanfic';
-import Classificacao from '/image/classificacao/classificacao-16-anos-logo.png';
-import '../../styles/icons/style.css';
+import icon from '/temp/valky.jpg';
 
 const TestComponent = () => {
   return (
     <div className={styles.fundo}>
-      <BotaoTexto/>
+      <Creditos funcao={'REVISÃO'} user={'Valky'} icon={icon}/>
+      <Creditos funcao={'TRADUÇÃO'} user={'Jae'} icon={icon} link='jaepagina'/>
+      <Creditos funcao={'ARTE DE CAPA'} user={'Ratinha'} icon={icon} link='linkprotwitter'/>
     </div>
   )
 }
