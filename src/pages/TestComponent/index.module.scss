@@ -1,1 +1,8 @@
 @import '../../styles/index.scss';
+
+.fundo{
+    padding: 2vw;
+    background-color: $primary-color-serpia;
+    display: flex;
+    gap: 20px;
+}

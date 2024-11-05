@@ -1,0 +1,12 @@
+@import '../../styles/index.scss';
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    .direita{
+        display: flex;
+        gap: 20px;
+    }
+}
