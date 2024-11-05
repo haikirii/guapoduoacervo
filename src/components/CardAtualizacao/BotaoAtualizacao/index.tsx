@@ -1,11 +1,8 @@
 import styles from './index.module.scss';
+import { CardFanficLinkType } from '../../../types/CardFanficLinkType';
 
-interface TagProps {
-    texto: string;
-}
-
-const BotaoAtualizacao = ({texto}: TagProps) => {
-    return <button className={styles.botao}>{texto}</button>;
+const BotaoAtualizacao = (props: CardFanficLinkType) => {
+    return <a href={props.link}><button className={styles.botao}>{props.texto}</button></a>;
 }
 
 export default BotaoAtualizacao;

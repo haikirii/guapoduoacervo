@@ -1,13 +1,10 @@
 import styles from './index.module.scss';
+import { CardFanficLinkType } from '../../../types/CardFanficLinkType';
 
-interface TituloProps {
-    texto: string;
-}
-
-const TituloFanfic = ({texto}: TituloProps) => {
+const TituloFanfic = (props: CardFanficLinkType) => {
     return  (
-        <div className={styles.alinhaTitulo}>
-            <h3 className={styles.titulo}>{texto}</h3>
+        <div className={styles.alinhamento}>
+            <a href={props.link}><h3 className={styles.titulo}>{props.texto}</h3></a>
         </div>
     )
     ;
