@@ -1,9 +1,13 @@
 import { SetStateAction, useState } from "react";
 import styles from "./index.module.scss";
 
-const HeaderSearch = () => {
+interface HeaderSearchProps {
+  onToggle: (state: boolean) => void;
+}
+
+const HeaderSearch = (props: HeaderSearchProps) => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [isOpen, setIsOpen] = useState(Boolean);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleSearchChange = (e: {
     target: { value: SetStateAction<string> };
@@ -14,15 +18,29 @@ const HeaderSearch = () => {
   const handleSearchSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     console.log("teste de busca:", searchQuery);
+    const newState = !isOpen;
+  };
+
+  const handleOnFocus = () => {
+    const newState = !isOpen;
+    setIsOpen(newState);
+    props.onToggle(newState);
+    console.log("muda estado", newState);
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSearchSubmit}>
+    <form
+      className={styles.form}
+      onFocus={handleOnFocus}
+      onBlur={handleOnFocus}
+      onSubmit={handleSearchSubmit}
+    >
       <input
         type="text"
         placeholder="Busque por obra, autor, tag, artista..."
         value={searchQuery}
         onChange={handleSearchChange}
+        className={isOpen ? styles.open : ""}
       />
       <button type="submit">
         <svg
