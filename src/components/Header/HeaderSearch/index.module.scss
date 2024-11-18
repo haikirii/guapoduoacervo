@@ -6,9 +6,15 @@
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
+  width: 30%;
+  transition: width .3s ease;
   input {
-    color: #5f4b32;
     margin-left: 24px;
+    width: 100%;
+    &::placeholder {
+      color: #ecdbb7;
+      transition: color 0.3s ease;
+    }
   }
 
   button {
@@ -22,7 +28,12 @@
   }
 
   &.open {
-    width: 500px;
+    width: 60%;
     border: 1px solid #000;
+    input {
+      &::placeholder {
+        color: #5f4b32;
+      }
+    }
   }
 }

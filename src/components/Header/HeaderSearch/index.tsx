@@ -17,14 +17,14 @@ const HeaderSearch = (props: HeaderSearchProps) => {
 
   const handleSearchSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    console.log("teste de busca:", searchQuery);
+    //console.log("teste de busca:", searchQuery);
   };
 
   const handleOnFocus = () => {
     const newState = !isOpen;
     setIsOpen(newState);
     props.onToggle(newState);
-    console.log("muda estado", newState);
+    //console.log("muda estado", newState);
   };
 
   return (
