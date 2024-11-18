@@ -18,7 +18,6 @@ const HeaderSearch = (props: HeaderSearchProps) => {
   const handleSearchSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     console.log("teste de busca:", searchQuery);
-    const newState = !isOpen;
   };
 
   const handleOnFocus = () => {
@@ -30,7 +29,7 @@ const HeaderSearch = (props: HeaderSearchProps) => {
 
   return (
     <form
-      className={styles.form}
+      className={`${styles.form} ${!isOpen ? styles.open : ""}`}
       onFocus={handleOnFocus}
       onBlur={handleOnFocus}
       onSubmit={handleSearchSubmit}
@@ -40,7 +39,6 @@ const HeaderSearch = (props: HeaderSearchProps) => {
         placeholder="Busque por obra, autor, tag, artista..."
         value={searchQuery}
         onChange={handleSearchChange}
-        className={!isOpen ? styles.open : ""}
       />
       <button type="submit">
         <svg
