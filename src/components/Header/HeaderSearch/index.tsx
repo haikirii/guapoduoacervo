@@ -40,7 +40,7 @@ const HeaderSearch = (props: HeaderSearchProps) => {
         placeholder="Busque por obra, autor, tag, artista..."
         value={searchQuery}
         onChange={handleSearchChange}
-        className={isOpen ? styles.open : ""}
+        className={!isOpen ? styles.open : ""}
       />
       <button type="submit">
         <svg

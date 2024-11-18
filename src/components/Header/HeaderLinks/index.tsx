@@ -8,6 +8,7 @@ interface LinksProps {
 const HeaderLinks = (props: LinksProps) => {
   return (
     <div className={styles.link}>
+      <a href={props.link}>{props.nomePagina}</a>
     </div>
   )
 }
