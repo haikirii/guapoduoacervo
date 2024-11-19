@@ -1,13 +1,18 @@
 import { SetStateAction, useState } from "react";
 import styles from "./index.module.scss";
 
-interface HeaderSearchProps {
-  onToggle: (state: boolean) => void;
+//interface HeaderSearchProps {
+ // onToggle: (state: boolean) => void;
+//}
+
+interface handleOnFocus {
+  changeOpen: () => void;
+  isOpen: boolean;
 }
 
-const HeaderSearch = (props: HeaderSearchProps) => {
+const HeaderSearch = (props: handleOnFocus) => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [isOpen, setIsOpen] = useState(true);
+ // const [isOpen, setIsOpen] = useState(true);
 
   const handleSearchChange = (e: {
     target: { value: SetStateAction<string> };
@@ -20,18 +25,18 @@ const HeaderSearch = (props: HeaderSearchProps) => {
     //console.log("teste de busca:", searchQuery);
   };
 
-  const handleOnFocus = () => {
-    const newState = !isOpen;
-    setIsOpen(newState);
-    props.onToggle(newState);
+  //const handleOnFocus = () => {
+   // const newState = !isOpen;
+    //setIsOpen(newState);
+    //props.onToggle(newState);
     //console.log("muda estado", newState);
-  };
+  //};
 
   return (
     <form
-      className={`${styles.form} ${!isOpen ? styles.open : ""}`}
-      onFocus={handleOnFocus}
-      onBlur={handleOnFocus}
+      className={`${styles.form} ${!props.isOpen ? styles.open : ""}`}
+      onFocus={props.changeOpen}
+      onBlur={props.changeOpen}
       onSubmit={handleSearchSubmit}
     >
       <input

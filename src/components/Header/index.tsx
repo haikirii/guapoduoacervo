@@ -6,29 +6,33 @@ import HeaderHomeLink from "./HeaderHomeLink";
 import HeaderLinks from "./HeaderLinks";
 import HeaderSearch from "./HeaderSearch";
 
+interface changeSearchOpen {
+  changeOpen: () => void;
+}
+
 const Header = () => {
   const { theme } = useContext(ThemeContext);
   const [isSearchOpen, setIsSearchOpen] = useState(true);
   const authContext = useContext(AuthContext);
-  {/*setIsLogged está sendo usado para debugar a diferença
-  de conteúdo logado para deslogado*/}
+  {
+    /*setIsLogged está sendo usado para debugar a diferença
+  de conteúdo logado para deslogado*/
+  }
   const { isLogged, setIsLogged } = authContext;
+
+  function changeOpen() {
+    setIsSearchOpen(!isSearchOpen)
+  } 
 
   return (
     <header className={`${styles.header} ${styles[theme]}`}>
       <div className={`${styles.headerContent} wrapper`}>
         <HeaderHomeLink />
-
-        {isSearchOpen && (
-          <>
-            <HeaderLinks nomePagina="Descubra" link="/t" />
-            <HeaderLinks nomePagina="Fanfics" link="/t" />
-            <HeaderLinks nomePagina="Fanarts" link="/t" />
-            {isLogged && <HeaderLinks nomePagina="logado" link="/t" />}
-          </>
-        )}
-
-        <HeaderSearch onToggle={setIsSearchOpen} />
+        <HeaderLinks nomePagina="Descubra" link="/t" compOpen={isSearchOpen}/>
+        <HeaderLinks nomePagina="Fanfics" link="/t" compOpen={isSearchOpen}/>
+        <HeaderLinks nomePagina="Fanarts" link="/t" compOpen={isSearchOpen}/>
+        {!isLogged && <HeaderLinks nomePagina="Sobre" link="/t" compOpen={isSearchOpen}/>}
+        <HeaderSearch changeOpen={changeOpen} isOpen={isSearchOpen} />
         {isLogged ? <h1>logado</h1> : <h1>deslogado</h1>}
       </div>
     </header>

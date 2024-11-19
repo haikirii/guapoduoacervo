@@ -7,12 +7,14 @@
   justify-content: space-between;
   border-radius: 12px;
   width: 30%;
-  transition: width .3s ease;
+  transition: width 0.3s ease;
   input {
     margin-left: 24px;
     width: 100%;
     &::placeholder {
       color: #ecdbb7;
+      font-style: italic;
+      font-weight: 400;
       transition: color 0.3s ease;
     }
   }
@@ -20,16 +22,24 @@
   button {
     background-color: #ecdbb7;
     border-radius: 12px;
+    cursor: pointer;
+    padding-inline: 12px;
     svg {
       width: 26px;
-      margin-right: 15px;
       color: #5f4b32;
+      transition: transform .1s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+      &:active {
+        color: black;
+      }
     }
   }
 
   &.open {
     width: 60%;
-    border: 1px solid #000;
+    //border: 1px solid #000;
     input {
       &::placeholder {
         color: #5f4b32;

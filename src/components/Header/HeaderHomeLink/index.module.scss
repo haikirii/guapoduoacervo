@@ -1,21 +1,23 @@
-@import '../../../styles/index.scss';
+@import "../../../styles/index.scss";
 
 .headerLogo {
-    // background-color: red;
-    height: $header-size;
-    .linkLogo {
-        display: flex;
-        align-items: center;
-        
-        img {
-            min-width: 70px;
-            height: auto;
-        }
-        .logoTexto {
-            height: $header-size;
-            .logoSvg {
-                width: 140px;
-            }
-        }
+  height: $header-size;
+  min-width: 210px;
+
+  .linkLogo {
+    display: flex;
+    align-items: center;
+
+    img {
+      min-width: 70px;
+      height: auto;
     }
+    
+    .logoTexto {
+      height: $header-size;
+      .logoSvg {
+        width: 140px;
+      }
+    }
+  }
 }

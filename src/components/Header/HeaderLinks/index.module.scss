@@ -1,1 +1,8 @@
 @import '../../../styles/index.scss';
+
+.links {
+  color: $text-color-serpia;
+  &.open {
+    display: none;
+  }
+}
