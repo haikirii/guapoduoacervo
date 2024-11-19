@@ -2,6 +2,10 @@
 
 .links {
   color: $text-color-serpia;
+  font-size: 20px;
+  &:hover {
+    text-decoration: underline;
+  }
   &.open {
     display: none;
   }

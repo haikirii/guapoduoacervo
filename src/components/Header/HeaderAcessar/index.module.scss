@@ -1,0 +1,29 @@
+@import "../../../styles/index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+.button {
+  height: 32px;
+  padding-inline: 20px;
+  border-radius: 12px;
+  background-color: $dourado;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #B18225;
+  }
+  &:active {
+    background-color: #8F6A1E;
+  }
+  span {
+    font-family: "Figtree", sans-serif;
+    color: $primary-color-serpia;
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  svg {
+    color: $primary-color-serpia;
+    width: 24px;
+  }
+}

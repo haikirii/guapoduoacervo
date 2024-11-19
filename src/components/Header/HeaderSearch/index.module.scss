@@ -2,11 +2,11 @@
 
 .form {
   background-color: #ecdbb7;
-  height: 40px;
+  height: 32px;
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
-  width: 30%;
+  width: 150px;
   transition: width 0.3s ease;
   input {
     margin-left: 24px;
@@ -15,6 +15,7 @@
       color: #ecdbb7;
       font-style: italic;
       font-weight: 400;
+      font-size: 20px;
       transition: color 0.3s ease;
     }
   }
@@ -25,7 +26,7 @@
     cursor: pointer;
     padding-inline: 12px;
     svg {
-      width: 26px;
+      width: 20px;
       color: #5f4b32;
       transition: transform .1s ease;
       &:hover {
@@ -42,7 +43,7 @@
     //border: 1px solid #000;
     input {
       &::placeholder {
-        color: #5f4b32;
+        color: $text-color-serpia;
       }
     }
   }
