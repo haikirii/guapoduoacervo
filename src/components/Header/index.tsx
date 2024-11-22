@@ -7,6 +7,7 @@ import HeaderLinks from "./HeaderLinks";
 import HeaderSearch from "./HeaderSearch";
 import HeaderAcessar from "./HeaderAcessar";
 import HeaderSaludo from "./HeaderSaludo";
+import HeaderDropdown from "./HeaderDropdown";
 
 interface changeSearchOpen {
   changeOpen: () => void;
@@ -31,8 +32,8 @@ const Header = () => {
   }
 
   //provisorio
-  const imageSrc = "image/about/Faburao-pfp.jpg" 
-  const nameSrc = "Faburao >w<"
+  const imageSrc = "image/about/Faburao-pfp.jpg";
+  const nameSrc = "Faburao >w<";
 
   return (
     <header className={`${styles.header} ${styles[theme]}`}>
@@ -41,14 +42,17 @@ const Header = () => {
         <HeaderLinks nomePagina="Descubra" link="/t" compOpen={isSearchOpen} />
         <HeaderLinks nomePagina="Fanfics" link="/t" compOpen={isSearchOpen} />
         <HeaderLinks nomePagina="Fanarts" link="/t" compOpen={isSearchOpen} />
+        {/*link do sobre só aparece quando não estiver logado*/}
         {!isLogged && (
           <HeaderLinks nomePagina="Sobre" link="/t" compOpen={isSearchOpen} />
         )}
         <HeaderSearch changeOpen={changeOpen} isOpen={isSearchOpen} />
+        {/*Botões que só aparecem quando logado*/}
+        {/*perfil, bookshelf, notificação, dropdown*/}
         {isLogged ? (
           <>
-            <HeaderSaludo pfp={imageSrc} name={nameSrc} profHref={'/t'}/>
-            <HeaderSaludo pfp={imageSrc} name={nameSrc} profHref={'/t'}/>
+            <HeaderSaludo pfp={imageSrc} name={nameSrc} profHref={"/t"} />
+            <HeaderDropdown />
           </>
         ) : (
           <HeaderAcessar />
