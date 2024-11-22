@@ -3,20 +3,34 @@
 .saludoBlock {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  &:hover {
+    background-color: #00000020;
+  }
+  &:active {
+    background-color: #00000030;
+  }
   .pfp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 4px;
     img {
-      width: 30px;
+      width: 32px;
       border-radius: 100%;
     }
   }
   .saludoText {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
     .saludo {
-
+      font-size: 10px;
     }
     .name {
+      font-size: 14px;
+      font-weight: bold;
     }
   }
 }

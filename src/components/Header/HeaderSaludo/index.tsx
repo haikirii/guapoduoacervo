@@ -3,30 +3,33 @@ import styles from "./index.module.scss";
 interface propsSaludo {
   pfp: string;
   name: string;
+  profHref: string;
 }
 
 const HeaderSaludo = (props: propsSaludo) => {
   const dia = new Date();
   const hora = dia.getHours();
   let saludo: string;
+
   // mudar isso quando colocar tradução pfv
   if (hora > 6 && hora < 12) {
-    saludo = "Bom dia,";
+    saludo = "BOM DIA,";
   } else if (hora < 18) {
-    saludo = "Boa tarde,";
+    saludo = "BOA TARDE,";
   } else {
-    saludo = "Boa noite,";
+    saludo = "BOA NOITE,";
   }
+
   return (
-    <div className={styles.saludoBlock}>
+    <a href={props.profHref} className={styles.saludoBlock}>
       <div className={styles.pfp}>
-        <img src={props.pfp} alt={`Foto de perfil de ${props.name}`} />
+          <img src={props.pfp} alt={`Foto de perfil de ${props.name}`} />
       </div>
       <div className={styles.saludoText}>
         <span className={styles.saludo}>{saludo}</span>
         <span className={styles.name}>{props.name}</span>
       </div>
-    </div>
+    </a>
   );
 };
 

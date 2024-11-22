@@ -47,8 +47,8 @@ const Header = () => {
         <HeaderSearch changeOpen={changeOpen} isOpen={isSearchOpen} />
         {isLogged ? (
           <>
-            <HeaderSaludo pfp={imageSrc} name={nameSrc}/>
-            <HeaderSaludo pfp={imageSrc} name={nameSrc}/>
+            <HeaderSaludo pfp={imageSrc} name={nameSrc} profHref={'/t'}/>
+            <HeaderSaludo pfp={imageSrc} name={nameSrc} profHref={'/t'}/>
           </>
         ) : (
           <HeaderAcessar />
