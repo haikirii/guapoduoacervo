@@ -6,6 +6,7 @@ import HeaderHomeLink from "./HeaderHomeLink";
 import HeaderLinks from "./HeaderLinks";
 import HeaderSearch from "./HeaderSearch";
 import HeaderAcessar from "./HeaderAcessar";
+import HeaderSaludo from "./HeaderSaludo";
 
 interface changeSearchOpen {
   changeOpen: () => void;
@@ -21,9 +22,17 @@ const Header = () => {
   }
   const { isLogged, setIsLogged } = authContext;
 
+  function changeLogin() {
+    setIsLogged(!isLogged);
+  }
+
   function changeOpen() {
     setIsSearchOpen(!isSearchOpen);
   }
+
+  //provisorio
+  const imageSrc = "image/about/Faburao-pfp.jpg" 
+  const nameSrc = "Faburao >w<"
 
   return (
     <header className={`${styles.header} ${styles[theme]}`}>
@@ -36,11 +45,15 @@ const Header = () => {
           <HeaderLinks nomePagina="Sobre" link="/t" compOpen={isSearchOpen} />
         )}
         <HeaderSearch changeOpen={changeOpen} isOpen={isSearchOpen} />
-        {isLogged ? 
-          <h1>logado</h1> 
-          :
+        {isLogged ? (
+          <>
+            <HeaderSaludo pfp={imageSrc} name={nameSrc}/>
+            <HeaderSaludo pfp={imageSrc} name={nameSrc}/>
+          </>
+        ) : (
           <HeaderAcessar />
-        }
+        )}
+        {isLogged ? <></> : <button onClick={changeLogin}>login</button>}
       </div>
     </header>
   );
