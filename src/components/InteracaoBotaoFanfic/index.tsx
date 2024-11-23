@@ -1,4 +1,4 @@
-import BotaoIcon from './BotaoIcon';
+import BotaoIcon from '../BotaoIcon';
 import '../../styles/index.scss';
 
 const InteracaoBotaoFanfic = () => {

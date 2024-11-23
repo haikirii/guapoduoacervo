@@ -1,9 +1,6 @@
-import { SetStateAction, useState } from "react";
 import styles from "./index.module.scss";
-
-//interface HeaderSearchProps {
- // onToggle: (state: boolean) => void;
-//}
+import { SetStateAction, useContext, useState } from "react";
+import { AuthContext } from "../../../contexts/AuthContext";
 
 interface handleOnFocus {
   changeOpen: () => void;
@@ -12,7 +9,8 @@ interface handleOnFocus {
 
 const HeaderSearch = (props: handleOnFocus) => {
   const [searchQuery, setSearchQuery] = useState("");
- // const [isOpen, setIsOpen] = useState(true);
+  const authContext = useContext(AuthContext);
+  const { isLogged, setIsLogged } = authContext;
 
   const handleSearchChange = (e: {
     target: { value: SetStateAction<string> };
@@ -24,17 +22,9 @@ const HeaderSearch = (props: handleOnFocus) => {
     e.preventDefault();
     //console.log("teste de busca:", searchQuery);
   };
-
-  //const handleOnFocus = () => {
-   // const newState = !isOpen;
-    //setIsOpen(newState);
-    //props.onToggle(newState);
-    //console.log("muda estado", newState);
-  //};
-
   return (
     <form
-      className={`${styles.form} ${!props.isOpen ? styles.open : ""}`}
+      className={`${styles.form} ${!props.isOpen ? styles.open : ""} ${isLogged ? styles.logged : ""}`}
       onFocus={props.changeOpen}
       onBlur={props.changeOpen}
       onSubmit={handleSearchSubmit}

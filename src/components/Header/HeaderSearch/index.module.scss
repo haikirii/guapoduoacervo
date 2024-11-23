@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
-  width: 160px;
+  width: 200px;
   transition: width 0.3s ease;
   input {
     margin-left: 24px;
@@ -28,7 +28,7 @@
     svg {
       width: 20px;
       color: #5f4b32;
-      transition: transform .1s ease;
+      transition: transform 0.1s ease;
       &:hover {
         transform: scale(1.2);
       }
@@ -45,6 +45,9 @@
       &::placeholder {
         color: $text-color-serpia;
       }
+    }
+    &.logged {
+      width: 40%;
     }
   }
 }

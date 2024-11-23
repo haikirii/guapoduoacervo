@@ -7,6 +7,7 @@ import HeaderLinks from "./HeaderLinks";
 import HeaderSearch from "./HeaderSearch";
 import HeaderAcessar from "./HeaderAcessar";
 import HeaderSaludo from "./HeaderSaludo";
+import BotaoIcon from "../BotaoIcon";
 import HeaderDropdown from "./HeaderDropdown";
 
 interface changeSearchOpen {
@@ -52,7 +53,10 @@ const Header = () => {
         {isLogged ? (
           <>
             <HeaderSaludo pfp={imageSrc} name={nameSrc} profHref={"/t"} />
-            <HeaderDropdown />
+            <BotaoIcon icon='ol-library'/>
+            <BotaoIcon icon='ol-act-notification'/>
+            <BotaoIcon icon='ol-act-notification'/>
+            {/*<HeaderDropdown />*/}
           </>
         ) : (
           <HeaderAcessar />
