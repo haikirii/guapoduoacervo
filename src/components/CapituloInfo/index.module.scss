@@ -1,0 +1,31 @@
+@import '../../styles/index.scss';
+
+.principal{
+    display: flex;
+    color: $text-color-serpia;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 25px;
+
+    .texto{
+        display: flex;
+        gap: 70px;
+        align-items: center;
+
+        .numero{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        .titulo{
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+    }
+    .tamanho{
+        display: flex;
+        font-size: 1.25rem;
+        gap: 80px;
+        align-items: center;
+    }
+
+}
