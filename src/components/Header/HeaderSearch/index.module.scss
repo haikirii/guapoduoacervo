@@ -16,6 +16,7 @@
       font-style: italic;
       font-weight: 400;
       font-size: 20px;
+      opacity: 0.75;
       transition: color 0.3s ease;
     }
   }
@@ -26,7 +27,7 @@
     cursor: pointer;
     padding-inline: 12px;
     svg {
-      width: 20px;
+      width: 24px;
       color: #5f4b32;
       transition: transform 0.1s ease;
       &:hover {
@@ -44,6 +45,7 @@
     input {
       &::placeholder {
         color: $text-color-serpia;
+        opacity: 0.75;
       }
     }
     &.logged {

@@ -51,17 +51,18 @@ const Header = () => {
         {/*Botões que só aparecem quando logado*/}
         {/*perfil, bookshelf, notificação, dropdown*/}
         {isLogged ? (
-          <>
+          <div className={styles.rightHeader}>
             <HeaderSaludo pfp={imageSrc} name={nameSrc} profHref={"/t"} />
-            <BotaoIcon icon='ol-library'/>
-            <BotaoIcon icon='ol-act-notification'/>
-            <BotaoIcon icon='ol-act-notification'/>
+            <BotaoIcon icon="ol-library" />
+            <BotaoIcon icon="ol-act-notification" />
+            <BotaoIcon icon="ol-act-notification" />
             {/*<HeaderDropdown />*/}
-          </>
+          </div>
         ) : (
-          <HeaderAcessar />
+          <div className={styles.rightHeader}>
+            <HeaderAcessar />
+          </div>
         )}
-        {isLogged ? <></> : <button onClick={changeLogin}>login</button>}
       </div>
     </header>
   );

@@ -3,10 +3,15 @@
 .links {
   color: $text-color-serpia;
   font-size: 20px;
+  //background-color: red;
+  max-width: 100px;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
   &:hover {
     text-decoration: underline;
   }
   &.open {
-    display: none;
+    max-width: 0px; // Fazendo com que o elemento "desapareça"
+    opacity: 0; // Opcional: adiciona suavidade extra
+    visibility: hidden; // Evita interação com o elemento
   }
 }

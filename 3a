@@ -17,9 +17,8 @@
     align-items: center;
     width: 100%;
     .rightHeader {
-      background-color: red;
+      width: 20rem;
       display: flex;
-      height: 100%;
     }
   }
 }
