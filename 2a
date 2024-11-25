@@ -9,13 +9,14 @@ h4 {
 .logoAcima {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+
   &.serpia {
     background-color: $primary-color-serpia;
   }
   &.noite {
     background-color: $primary-color-noite;
   }
+  padding-bottom: 40px;
 }
 .footer {
   height: $footer-size;

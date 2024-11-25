@@ -1,4 +1,6 @@
 import styles from './index.module.scss';
+import { ThemeContext } from "../../../contexts/ThemeContext";
+import { useContext } from 'react';
 
 interface numeroTituloProps {
   numero: number
@@ -13,8 +15,9 @@ function formatNumber(num: number) {
 }
 
 const NumeroTituloFic = (props: numeroTituloProps) => {
+  const { theme } = useContext(ThemeContext);'./index.module.scss';
   return (
-    <h3 className={styles.numTitleCap}>
+    <h3 className={`${styles.numTitleCap} ${styles[theme]}`}>
       {formatNumber(props.numero)}.{props.tituloCap}
     </h3> 
   )

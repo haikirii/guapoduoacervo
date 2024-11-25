@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+@import "../../../styles/index.scss";
 
-.numTitleCap  {
+.numTitleCap {
   font-family: "Gloock", serif;
   font-size: 64px;
   font-weight: 300;
-  color: #fff;
+  &.serpia {
+    color: #fff;
+  }
+  &.noite {
+    color: $dourado;
+  }
 }

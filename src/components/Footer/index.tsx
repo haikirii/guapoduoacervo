@@ -50,11 +50,11 @@ const Footer = () => {
 
     return(
         <>
-        <div className={styles.logoAcima}>
+        <div className={`${styles.logoAcima} ${styles[theme]}`}>
             <FooterLogo src={FooterLogoImg} alt={'Logo com duas alianças e um ornamento em baixo, uma aliança com um quebra cabeça e outro com uma aranha'} />
         </div>
         <footer className={`${styles.footer} ${styles[theme]}`}>
-            <div className={`${styles.container} wrapper`}>
+            <div className={`${styles.container} ${styles[theme]} wrapper`}>
                 <div className={``}>
                     <FooterLinks
                         title='Sitemap'

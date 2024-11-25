@@ -1,4 +1,6 @@
 import styles from './index.module.scss';
+import { ThemeContext } from "../../../contexts/ThemeContext";
+import { useContext } from 'react';
 
 interface tituloProps {
   titulo: string;
@@ -6,9 +8,10 @@ interface tituloProps {
 }
 
 const TituloAutore = (props: tituloProps) => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <h4 className={styles.tituloNome}>
-      {props.titulo}, <span className={styles.italic}>por {props.autore}</span>
+    <h4 className={`${styles.tituloNome} ${styles[theme]}`}>
+      {props.titulo}, <span className={`${styles.italic}`}>por {props.autore}</span>
     </h4>
   )
 }

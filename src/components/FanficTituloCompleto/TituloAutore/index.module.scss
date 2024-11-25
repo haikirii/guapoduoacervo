@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-  @import '../../../styles/index.scss';
+@import "../../../styles/index.scss";
 
 .tituloNome {
   font-size: 24px;
   font-family: "Figtree", serif;
-  font-weight: 300;
-  color: #fff;
+  font-weight: 400;
+  line-height: 0;
+  &.serpia {
+    color: #fff;
+  }
+  &.noite {
+    color: $dourado;
+  }
   .italic {
-    font-style: italic; 
+    font-style: italic;
   }
 }
