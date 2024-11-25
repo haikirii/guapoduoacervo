@@ -1,0 +1,11 @@
+@import '../../styles/index.scss';
+.titulo {
+  background-color: $dourado;
+}
+
+main {
+  background-color: $dourado;
+  .mainContent {
+    background-color: $primary-color-serpia;
+  }
+}

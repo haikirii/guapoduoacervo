@@ -3,6 +3,7 @@ import PageLayout from "../layouts/PageLayout";
 import NotFound from "../pages/NotFound";
 import Home from "../pages/Home";
 import TestComponent from "../pages/TestComponent";
+import FanficProtot from "../pages/FanficProtot";
 
 export const Paths = () => {
     return (
@@ -12,6 +13,7 @@ export const Paths = () => {
                     <Route path={'/'} element={<PageLayout />}>
                         <Route index element={<Home />} />
                         <Route path={'/t'} element={<TestComponent />}/>
+                        <Route path={'/fic'} element={<FanficProtot/>}/>
                     </Route>
                     <Route path={'*'} element={<NotFound />} />
                 </Routes>
