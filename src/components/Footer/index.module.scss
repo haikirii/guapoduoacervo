@@ -1,57 +1,62 @@
-@import '../../styles/index.scss';
+@import "../../styles/index.scss";
 
 h4 {
-    // font-family: 'Figtree';
-    font-size: 1.4rem;
-    margin-bottom: 18px;
+  // font-family: 'Figtree';
+  font-size: 1.4rem;
+  margin-bottom: 18px;
 }
 
 .logoAcima {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  &.serpia {
     background-color: $primary-color-serpia;
+  }
+  &.noite {
+    background-color: $primary-color-noite;
+  }
 }
 .footer {
-    height: $footer-size;
-    border-top: 1px solid $dourado;
+  height: $footer-size;
+  border-top: 1px solid $dourado;
 
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+
+  background-color: #fcfcfc;
+  color: #353535;
+
+  & > * {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+  }
 
-    width: 100vw;
+  .container {
+    margin-top: 50px;
+    justify-content: space-between;
+  }
 
-    background-color: #FCFCFC;
-    color: #353535;
+  .lang {
+    justify-content: flex-end;
+  }
 
-    & > * {
-        width: 100%;
-        display: flex;
-    }
+  .comerc {
+    justify-content: center;
+  }
 
-    .container {
-        margin-top: 50px;
-        justify-content: space-between;
-    }
-
-    .lang {
-        justify-content: flex-end;
-    }
-
-    .comerc {
-        justify-content: center;
-    }
-    
-    // &.serpia {
-    //     background-color: $primary-color-serpia;
-    //     .logoFooterText span {
-    //         color: $text-color-serpia;
-    //     }
-    // }
-    // &.noite {
-    //     background-color: $primary-color-noite;
-    //     .logoFooterText span {
-    //         color: $dourado;
-    //     }
-    // }
+  // &.serpia {
+  //     background-color: $primary-color-serpia;
+  //     .logoFooterText span {
+  //         color: $text-color-serpia;
+  //     }
+  // }
+  // &.noite {
+  //     background-color: $primary-color-noite;
+  //     .logoFooterText span {
+  //         color: $dourado;
+  //     }
+  // }
 }

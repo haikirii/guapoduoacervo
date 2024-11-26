@@ -1,13 +1,13 @@
-import ImagemFanart from '../../components/FanartProtot/ImagemFanart';
+import ImagemFanart from '../../components/ImagemFanart';
 import Capa from '/temp/capa.jpg';
 import styles from './index.module.scss';
 import '../../styles/index.scss';
-import TituloFanart from '../../components/FanartProtot/TituloFanart';
-import TextoFanart from '../../components/FanartProtot/TextoFanart';
+import TituloFanart from '../../components/TituloFanart';
+import TextoFanart from '../../components/TextoFanart';
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { useContext } from 'react';
 import Tag from '../../components/CardFanfic/Tag';
-import TagCategoria from '../../components/FanartProtot/TagCategoria';
+import TagCategoria from '../../components/TagCategoria';
 
 const FanartProtot = () => {
 

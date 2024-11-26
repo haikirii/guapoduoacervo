@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.tags{
+    font-family: "Figtree";
+    font-weight: 300;
+    font-size: .75rem;
+    padding-block: 5px;
+    padding-inline: 14px;
+    border-radius: 20px;
+    margin: 3px;
+    color: $tertiary-color-serpia;
+
+    &.serpia{
+        background-color: $rosa;
+    }
+    &.noite{
+        background-color: $hover-rosa;
+    }
+
+    &:hover{
+        cursor: pointer;
+        &.serpia{
+            background-color: $hover-rosa;
+        }
+        &.noite{
+            background-color: $rosa;
+        }
+    }
+
+    .a{
+        text-decoration: none;
+    }
+}
