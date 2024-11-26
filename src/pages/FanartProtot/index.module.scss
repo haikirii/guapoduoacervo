@@ -1,0 +1,24 @@
+@import '../../styles/index.scss';
+
+.main{
+    
+    &.serpia {
+        background-color: $primary-color-serpia;
+    }
+
+    &.noite {
+        background-color: $primary-color-noite;
+    }
+    
+    .principal{
+        padding-block: 50px;
+    
+        .alinha{
+            width: 60%;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+    }
+}
+
+
