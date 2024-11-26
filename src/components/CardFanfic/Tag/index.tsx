@@ -1,8 +1,14 @@
 import styles from './index.module.scss';
 import { CardFanficLinkType } from '../../../types/CardFanficLinkType';
+import { Link } from 'react-router-dom';
+import { ThemeContext } from "../../../contexts/ThemeContext";
+import { useContext } from 'react';
 
 const Tag = (props: CardFanficLinkType) => {
-    return  <a href={props.link}><span className={styles.tags}>{props.texto}</span></a>;
+
+    const { theme } = useContext(ThemeContext);
+
+    return  <Link to={`${props.link}`}><button className={`${styles.tags} ${styles[theme]}`}>{props.texto}</button></Link>;
 }
 
 export default Tag;
