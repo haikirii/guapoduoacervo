@@ -1,0 +1,12 @@
+@import '../../../styles/index.scss';
+
+.alinha{
+    display: flex;
+    justify-content: center;
+
+    .imagem{
+        width: 700px;
+        height: auto;
+        border-radius: 30px;
+    }
+}

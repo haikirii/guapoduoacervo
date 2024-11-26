@@ -1,0 +1,16 @@
+@import '../../../styles/index.scss';
+
+.titulo{
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: Figtree;
+    padding-bottom: 20px;
+
+    &.serpia {
+        color: $text-color-serpia;
+    }
+
+    &.noite {
+        color: $text-color-noite;
+    }
+}

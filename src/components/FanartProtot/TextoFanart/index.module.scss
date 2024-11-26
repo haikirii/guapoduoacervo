@@ -1,0 +1,18 @@
+@import '../../../styles/index.scss';
+
+.texto{
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-family: Figtree;
+    line-height: 21px;
+    padding-bottom: 10px;
+    text-align: justify;
+
+    &.serpia {
+        color: $text-color-serpia;
+    }
+
+    &.noite {
+        color: $text-color-noite;
+    }
+}
