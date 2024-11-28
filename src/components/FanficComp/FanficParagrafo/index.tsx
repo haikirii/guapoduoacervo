@@ -1,5 +1,5 @@
 import styles from "./index.module.scss";
-import { ThemeContext } from "../../contexts/ThemeContext";
+import { ThemeContext } from "../../../contexts/ThemeContext";
 import { useContext } from "react";
 
 interface paragrafProps {
