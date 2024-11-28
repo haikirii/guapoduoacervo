@@ -5,8 +5,15 @@
     justify-content: center;
 
     .imagem{
-        width: 700px;
+        width: 60%;
         height: auto;
         border-radius: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .alinha{
+        .imagem{
+                width: 80%;
+        }
     }
 }

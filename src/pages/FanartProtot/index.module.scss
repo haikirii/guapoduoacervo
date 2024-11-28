@@ -20,5 +20,16 @@
         }
     }
 }
+@media screen and (max-width: 600px) {
+    .main{
+        .principal{
+            padding-block: 40px;
+            .alinha{
+                width: 80%;
+                padding-top: 30px;
+            }
+        }
+    }
+}
 
 

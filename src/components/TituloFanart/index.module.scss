@@ -14,3 +14,16 @@
         color: $text-color-noite;
     }
 }
+
+@media screen and (max-width: 810px) and (min-width: 425px){
+    .titulo{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .titulo{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
