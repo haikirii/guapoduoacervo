@@ -2,3 +2,10 @@
   padding-left: 64px;
   padding-block: 64px;
 }
+
+@media (max-width: 1024px) {
+  .titulos {
+    padding-left: 20px;
+    padding-block: 40px;
+  } 
+}

@@ -3,7 +3,7 @@
 
 .numTitleCap {
   font-family: "Gloock", serif;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 300;
   &.serpia {
     color: #fff;
@@ -11,4 +11,11 @@
   &.noite {
     color: $dourado;
   }
+}
+
+@media (max-width: 1024px) {
+  .numTitleCap {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+  }  
 }
