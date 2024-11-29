@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import styles from "./index.module.scss";
-import FanficTituloCompleto from "../../components/FanficTituloCompleto";
-import FanficParagrafo from "../../components/FanficParagrafo";
+import FanficTituloCompleto from "../../components/FanficComp/FanficTituloCompleto";
+import FanficParagrafo from "../../components/FanficComp/FanficParagrafo";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { useContext } from "react";
 

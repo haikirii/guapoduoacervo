@@ -24,7 +24,7 @@ const PageLayout = () =>{
             <main role="main" className={`${styles.main} ${styles[theme]}`}>
                 <Outlet/>
             </main>
-            <Footer/>
+            <FooterWip />
         </>
     );
 }

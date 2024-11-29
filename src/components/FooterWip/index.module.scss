@@ -1,8 +1,8 @@
-@use '../../stylus/cores/cores' as *;
+@import "../../styles/index.scss";
 
 .footer {
     padding-block: 40px;
-    position: fixed;
+    //position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1000;
