@@ -1,6 +1,5 @@
 import styles from './index.module.scss';
 import { BotaoTextoProps } from '../../../types/BotaoTextoType';
-import '../../../styles/icon/style.css';
 import { Link } from 'react-router-dom';
 
 const BotaoDourado = (props: BotaoTextoProps) => {

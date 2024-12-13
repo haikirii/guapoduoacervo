@@ -8,6 +8,7 @@
     padding-right: 15px;
     border-radius: 12px;
     margin: 5px;
+    color: $text-color-serpia;
 
     &:hover{
         cursor: pointer;
@@ -17,8 +18,5 @@
     
     .icone{
         font-size: 20px;
-    }
-    &:before{
-        color: $text-color-serpia;
     }
 }

@@ -5,7 +5,7 @@ const InteracaoBotaoFanfic = () => {
     return(
         <div>
             <BotaoIcon icon='ol-heart'/>
-            <BotaoIcon icon='ol-library'/>
+            <BotaoIcon icon='ol-file-tray'/>
             <BotaoIcon icon='ol-bookmark'/>
             <BotaoIcon icon='ol-act-notification'/>
         </div>

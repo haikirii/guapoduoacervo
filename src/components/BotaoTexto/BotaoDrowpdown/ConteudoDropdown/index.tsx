@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 import { BotaoTextoProps } from '../../../../types/BotaoTextoType';
 import { Link } from 'react-router-dom';
-import '../../../../styles/logo/style.css';
+import '../../../../styles/icon/style.css';
 
 const ConteudoDropdown = (props: BotaoTextoProps) => {
 
