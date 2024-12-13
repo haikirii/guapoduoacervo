@@ -1,0 +1,30 @@
+@import '../../styles/index.scss';
+
+.principal{
+    padding-left: 20px;
+
+    .comentario{
+        font-family: Figtree;
+        width: 200px;
+        background-color: $botao-atualizacao;
+        color: $text-color-serpia;
+        font-size: .88rem;
+        padding: 15px;
+        border-radius: 12px;
+        position: relative;
+
+        &::before{
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: -20px;
+            right: auto;
+            top: 0px;
+            bottom: auto;
+            border: 22px solid;
+            border-radius: 6px;
+            border-color: $botao-atualizacao transparent transparent transparent;
+        }
+    }
+}
