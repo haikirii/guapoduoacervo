@@ -1,0 +1,10 @@
+@import '../../styles/index.scss';
+
+.principal {
+    display: flex;
+    width: 100%;
+
+    .texto{
+        width: 80%;
+    }
+}
