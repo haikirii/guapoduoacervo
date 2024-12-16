@@ -1,25 +1,29 @@
 @import '../../../styles/index.scss';
 
-.botao{
-    border-radius: 12px;
-    padding: 8px 10px;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    color: $tertiary-color-serpia;
-    background-color: $dourado;
-    border: 1px $dourado solid;
-    display: flex;
-
-    .texto{
-        font-family: "Figtree", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1rem;
-    }
-
-    .icon{
-        font-size: 1.1rem;
+.link{
+    display: contents;
+    .botao{
+        width: fit-content;
+        border-radius: 12px;
+        padding: 8px 10px;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        color: $tertiary-color-serpia;
+        background-color: $dourado;
+        border: 1px $dourado solid;
+        display: flex;
+    
+        .texto{
+            font-family: "Figtree", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1rem;
+        }
+    
+        .icon{
+            font-size: 1.1rem;
+        }
     }
 }

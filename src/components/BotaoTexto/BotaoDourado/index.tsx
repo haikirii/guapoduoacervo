@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const BotaoDourado = (props: BotaoTextoProps) => {
   return( 
-  <Link to={`${props.link}`}>
+  <Link to={`${props.link}`} className={styles.link}>
     <div className={styles.botao}>
       <p className={styles.texto}>{props.texto}</p>
       <i className={`${props.icon} ${styles.icon}`}/>
